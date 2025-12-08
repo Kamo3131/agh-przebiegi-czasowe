@@ -6,6 +6,8 @@
 //Projects includes
 #include "IReader.h"
 #include "FileReader.h"
+#include "IChart.h"
+#include "LineChart.h"
 
 int main()
 {
@@ -17,16 +19,33 @@ int main()
 //  reader->Set_time(100);
 //  std::cout << reader->Get_time_read() << std::endl;
 
- while (window.isOpen())
-  {
-   window.clear(sf::Color::White);
-   
-   while (const std::optional event = window.pollEvent())
-    {
-     if (event->is<sf::Event::Closed>()) window.close();
-    }
-  
-   window.display();
-  }
+ std::unique_ptr<IReader> reader = std::make_unique<FileReader>("data.txt"); 
+if(reader->Load_data()){
+
+    // std::unique_ptr<IChart> chart = std::make_unique<LineChart>(reader->Get_data());
+    // lineChart.Set_zoom_value(10.);
+    LineChart lineChart(reader->Get_data());
+    lineChart.Auto_scale(window);
+    while (window.isOpen())
+
+        {
+        window.clear(sf::Color::White);
+        
+        while (const std::optional event = window.pollEvent())
+            {
+            if (event->is<sf::Event::Closed>()) window.close();
+            }
+        // window.draw(*chart);
+
+        window.draw(lineChart);
+        window.display();
+        }
+} else
+{
+    std::cerr << "No data loaded. Exiting!\n";
+    return -1;
+}
+
+
  return 0;
 }
