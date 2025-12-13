@@ -4,31 +4,7 @@
 #include <vector>
 #include <stdexcept>
 
-/**
- * @struct Timestamp
- * This struct stores info about voltage and time for one point
- */
-struct Timestamp
-{
-    float _voltage;
-    float _time;
-
-    explicit Timestamp(float voltage, float time)
-        : _voltage(voltage), _time(time) {}
-    
-    Timestamp()
-        : Timestamp(0.0f, 0.0f) {}
-
-    [[nodiscard]] float Get_time() const
-    {
-        return _time;
-    }
-
-    [[nodiscard]] float Get_voltage() const
-    {
-        return _voltage;
-    }
-};
+#include "RecordingContainers.h"
 
 /**
  * @class IReader
@@ -41,10 +17,9 @@ public:
     
     /**
      * @brief Get_data
-     * @return vector with timestamps
-     * @throws runtime_error if timestamps not loaded before
+     * @return RecordingHistory with all timestamps collected
      */
-    [[nodiscard]] virtual  std::vector<Timestamp> Get_data() const = 0;
+    [[nodiscard]] virtual  const RecordingHistory& Get_data() const = 0;
 
     /**
      * @brief Set_file
@@ -54,24 +29,28 @@ public:
     [[nodiscard]] virtual bool Set_file(const std::string_view & fname) = 0;
 
     /**
-     * @brief Load_data
-     * @return true if timestamps loaded
+     * @brief Start
+     * @note starts execution of Reader thread
      */
-    [[nodiscard]] virtual bool Load_data() = 0;
+    virtual void Start() = 0;
 
     /**
-     * @brief Set_time
-     * @param time that will be added to new time values
-     * @note use this method if data time value should start 
-     * from given 'time' 
+     * @brief Stop
+     * @note stops execution of Reader thread
      */
-    virtual void Set_time(float time) = 0;
+    virtual void Stop()  = 0;
 
     /**
-     * @brief Get_time_read
-     * @return time value of last loaded timestamp
+     * @brief Resume
+     * @note resumes execution after Stop() was called
      */
-    [[nodiscard]] virtual float Get_time_read() const = 0;
+    virtual void Resume()  = 0;
+
+    /**
+     * @brief Destroy
+     * @note destroys thread, after this new thread with Start() can be created
+     */
+    virtual void Destroy()  = 0;
 
     virtual ~IReader() {}
 };
