@@ -104,5 +104,4 @@ target_include_directories(implot PUBLIC
 target_link_libraries(implot PUBLIC imgui)
 
 #============================================================================
-add_subdirectory(Generator)
 add_subdirectory(Oscillator)
