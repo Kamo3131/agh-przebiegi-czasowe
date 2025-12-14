@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['_5fdata_0',['_data',['../class_file_reader.html#aacd7c259e696be894f3b38f052cf8dab',1,'FileReader::_data'],['../struct_timestamp.html#ac83a285ffa02ac4e1758fa197befb7e2',1,'Timestamp::_data'],['../class_recording_vector.html#a8e59617a6c5d18f82c17f43fdfdd3546',1,'RecordingVector::_data'],['../class_recording_history.html#a30c60d284b85c80e6e7513b69665564f',1,'RecordingHistory::_data']]],
+  ['_5fdata_5fptr_1',['_data_ptr',['../class_recording_history_1_1iterator.html#abee7b54cb6e0efd63f674a29205b5405',1,'RecordingHistory::iterator']]],
+  ['_5fdestroy_5fflag_2',['_destroy_flag',['../class_dummy_1_1_generator.html#a13cc5035510fcc4e52cdfaa0d2200017',1,'Dummy::Generator::_destroy_flag'],['../class_file_reader.html#a7492937857d7e809691fbccb73152ed5',1,'FileReader::_destroy_flag']]],
+  ['_5fdestroyed_3',['_destroyed',['../class_dummy_1_1_generator.html#a43cf028a71044007610f4ad19fa32164',1,'Dummy::Generator::_destroyed'],['../class_file_reader.html#a65f897bee35c85b38933fbdecf94af62',1,'FileReader::_destroyed']]],
+  ['_5ffile_4',['_file',['../class_file_reader.html#ae68ea23b3fb9c637566d59b08eae5f27',1,'FileReader']]],
+  ['_5ffname_5',['_fname',['../class_dummy_1_1_generator.html#a173cbb446df842e45b5c10bef360af0d',1,'Dummy::Generator::_fname'],['../class_file_reader.html#afaea0f1f5170603f82bbcb607ffacd5e',1,'FileReader::_fname']]],
+  ['_5ffunc_6',['_func',['../class_dummy_1_1_func_iterator.html#af36094c0ebbf99b21b609374ecd8448e',1,'Dummy::FuncIterator']]],
+  ['_5ffunc_5fiter_7',['_func_iter',['../class_dummy_1_1_generator.html#ae543c93815423e8744b1079def36384c',1,'Dummy::Generator']]],
+  ['_5flist_5fit_8',['_list_it',['../class_recording_history_1_1iterator.html#a9c3ffda1d238f688aa8a15665927769b',1,'RecordingHistory::iterator']]],
+  ['_5fmax_5findex_9',['_max_index',['../struct_range_params.html#a5a2278bfbfb5ac2060a554c722102acd',1,'RangeParams']]],
+  ['_5fmax_5fvalue_10',['_max_value',['../class_dummy_1_1_func_iterator.html#a62fc1fa4e624c53443fae33452d1ac22',1,'Dummy::FuncIterator']]],
+  ['_5fofile_11',['_ofile',['../class_dummy_1_1_generator.html#a84b0d15fd968ab43fa0e57f9854e15dc',1,'Dummy::Generator']]],
+  ['_5fparams_12',['_params',['../class_recording_vector.html#a30a87a298a02a30ec6586d48213eae02',1,'RecordingVector::_params'],['../class_recording_history.html#a9127633232599d345079cd86f7bff26c',1,'RecordingHistory::_params']]],
+  ['_5frecordingvectors_5flimit_13',['_recordingVectors_limit',['../class_recording_history.html#a6914d64cf380c69811cc19eb64c79819',1,'RecordingHistory']]],
+  ['_5fresolution_14',['_resolution',['../class_dummy_1_1_generator.html#a305f9c3b6c650962f499f4f5d43ff8a6',1,'Dummy::Generator']]],
+  ['_5frunning_15',['_running',['../class_dummy_1_1_generator.html#a9b8d23b5a05906f99659005b37fdd934',1,'Dummy::Generator::_running'],['../class_file_reader.html#a7c2cf4ca8104f85a00b7bf1c5a62ad09',1,'FileReader::_running']]],
+  ['_5fstart_5ftime_16',['_start_time',['../class_file_reader.html#a76cafaf1785d25a6fd7c6063a0d6b708',1,'FileReader']]],
+  ['_5fstep_17',['_step',['../class_dummy_1_1_func_iterator.html#a53cc3122aee9fbcb49749161b837a63f',1,'Dummy::FuncIterator']]],
+  ['_5fstep_5fcnt_18',['_step_cnt',['../class_dummy_1_1_func_iterator.html#a3bcfd74b6a9fab35cbe902089c7ce953',1,'Dummy::FuncIterator']]],
+  ['_5fsteps_5fper_5fcycle_19',['_steps_per_cycle',['../class_dummy_1_1_func_iterator.html#ad7e84935e1efd0dcea01ae980ce0d2b9',1,'Dummy::FuncIterator']]],
+  ['_5fstop_5fflag_20',['_stop_flag',['../class_dummy_1_1_generator.html#a44b77f8d020f3b2fd6fef45836035a5c',1,'Dummy::Generator::_stop_flag'],['../class_file_reader.html#a927ac36955c59c075d5e02ac1077e0cf',1,'FileReader::_stop_flag']]],
+  ['_5fthread_21',['_thread',['../class_dummy_1_1_generator.html#ae20deb34d07d56763db4c4df95662b3e',1,'Dummy::Generator::_thread'],['../class_file_reader.html#a7cf1039d63ebfad1e1d8be870d17d774',1,'FileReader::_thread']]],
+  ['_5ftime_5frange_22',['_time_range',['../struct_range_params.html#aef6a6b0927e0d6c26f6444e0f51fc5f2',1,'RangeParams']]],
+  ['_5fvec_5fit_23',['_vec_it',['../class_recording_history_1_1iterator.html#a4a0dd0879f626e0bfc2b0ed380c74311',1,'RecordingHistory::iterator']]],
+  ['_5fvoltage_5frange_24',['_voltage_range',['../struct_range_params.html#a550dacd54231c968fc2d0d47e6563dfb',1,'RangeParams']]]
+];

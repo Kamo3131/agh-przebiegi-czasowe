@@ -105,3 +105,35 @@ target_link_libraries(implot PUBLIC imgui)
 
 #============================================================================
 add_subdirectory(Oscillator)
+
+#============================================================================
+# Doxygen documentation
+#============================================================================
+find_package(Doxygen)
+if (NOT DOXYGEN_FOUND)
+    message(WARNING "Doxygen not found, 'doc' target disabled")
+    return()
+endif()
+
+if (DOXYGEN_FOUND)
+    set(DOXYGEN_OUTPUT_DIR ${CMAKE_SOURCE_DIR}/Doc)
+    set(DOXYGEN_INPUT_DIR
+        ${CMAKE_SOURCE_DIR}/Oscillator/include
+        ${CMAKE_SOURCE_DIR}/Oscillator/src
+    )
+
+    string(REPLACE ";" " " DOXYGEN_INPUT_DIR "${DOXYGEN_INPUT_DIR}")
+
+    # Doxyfile template (generated)
+    set(DOXYFILE_IN ${CMAKE_SOURCE_DIR}/Doxyfile.in)
+    set(DOXYFILE_OUT ${CMAKE_BINARY_DIR}/Doxyfile)
+
+    configure_file(${DOXYFILE_IN} ${DOXYFILE_OUT} @ONLY)
+
+    add_custom_target(doc
+        COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYFILE_OUT}
+        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+        COMMENT "Generating Doxygen documentation"
+        VERBATIM
+    )
+endif()
