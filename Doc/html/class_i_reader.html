@@ -107,8 +107,12 @@ Inheritance diagram for IReader:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a95882e225a14119d93aadffd330813d1" id="r_a95882e225a14119d93aadffd330813d1"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_recording_history.html">RecordingHistory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95882e225a14119d93aadffd330813d1">Get_data</a> () const =0</td></tr>
 <tr class="memdesc:a95882e225a14119d93aadffd330813d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get_data.  <br /></td></tr>
+<tr class="memitem:a81bc1034a8cdf3a5b95d11499507ebdb" id="r_a81bc1034a8cdf3a5b95d11499507ebdb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370f">ReaderState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81bc1034a8cdf3a5b95d11499507ebdb">Get_state</a> () const =0</td></tr>
+<tr class="memdesc:a81bc1034a8cdf3a5b95d11499507ebdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get_state.  <br /></td></tr>
 <tr class="memitem:aa124feddfe068cba8ddaff54e71ab556" id="r_aa124feddfe068cba8ddaff54e71ab556"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa124feddfe068cba8ddaff54e71ab556">Set_file</a> (const std::string_view &amp;fname)=0</td></tr>
 <tr class="memdesc:aa124feddfe068cba8ddaff54e71ab556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set_file.  <br /></td></tr>
+<tr class="memitem:ac851d8ebeb6579bca01e853eb18e1e6b" id="r_ac851d8ebeb6579bca01e853eb18e1e6b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac851d8ebeb6579bca01e853eb18e1e6b">Set_history_time_limit</a> (int limit_in_sec)=0</td></tr>
+<tr class="memdesc:ac851d8ebeb6579bca01e853eb18e1e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set_history_time_limit.  <br /></td></tr>
 <tr class="memitem:a93cc93c088750fd7f5cc481d6479adbc" id="r_a93cc93c088750fd7f5cc481d6479adbc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93cc93c088750fd7f5cc481d6479adbc">Start</a> ()=0</td></tr>
 <tr class="memdesc:a93cc93c088750fd7f5cc481d6479adbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start.  <br /></td></tr>
 <tr class="memitem:a8855b2f1dc9e40479894e2d836831b7a" id="r_a8855b2f1dc9e40479894e2d836831b7a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8855b2f1dc9e40479894e2d836831b7a">Stop</a> ()=0</td></tr>
@@ -122,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class provides common interface for all implementations that give access to data </p>
 
-<p class="definition">Definition at line <a class="el" href="_i_reader_8h_source.html#l00014">14</a> of file <a class="el" href="_i_reader_8h_source.html">IReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_i_reader_8h_source.html#l00028">28</a> of file <a class="el" href="_i_reader_8h_source.html">IReader.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3489c23855da532dd3a10cfae78bc899" name="a3489c23855da532dd3a10cfae78bc899"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3489c23855da532dd3a10cfae78bc899">&#9670;&#160;</a></span>~IReader()</h2>
@@ -147,8 +151,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_i_reader_8h_source.html#l00055">55</a> of file <a class="el" href="_i_reader_8h_source.html">IReader.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="_i_reader_8h_source.html#l00081">81</a> of file <a class="el" href="_i_reader_8h_source.html">IReader.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,6 +214,36 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_recording_history.html">RecordingHistory</a> with all timestamps collected </dd></dl>
 
 <p>Implemented in <a class="el" href="class_file_reader.html#ae444ae143f6f2e9fbf637a1ce8e4de2e">FileReader</a>.</p>
+
+</div>
+</div>
+<a id="a81bc1034a8cdf3a5b95d11499507ebdb" name="a81bc1034a8cdf3a5b95d11499507ebdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81bc1034a8cdf3a5b95d11499507ebdb">&#9670;&#160;</a></span>Get_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370f">ReaderState</a> IReader::Get_state </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get_state. </p>
+<dl class="section return"><dt>Returns</dt><dd>state of the reader </dd></dl>
+
+<p>Implemented in <a class="el" href="class_file_reader.html#a4ffd95bb149d1291cff0f81b558e1070">FileReader</a>.</p>
 
 </div>
 </div>
@@ -276,6 +310,41 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if file successfully open </dd></dl>
 
 <p>Implemented in <a class="el" href="class_file_reader.html#ac1281c52b4cc9e36f7b3f4fc6cca9dbc">FileReader</a>.</p>
+
+</div>
+</div>
+<a id="ac851d8ebeb6579bca01e853eb18e1e6b" name="ac851d8ebeb6579bca01e853eb18e1e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac851d8ebeb6579bca01e853eb18e1e6b">&#9670;&#160;</a></span>Set_history_time_limit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IReader::Set_history_time_limit </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>limit_in_sec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set_history_time_limit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">limit_in_sec</td><td>limit of seconds of input history stored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_file_reader.html#af071db2083dc565c506d605a44e2ba40">FileReader</a>.</p>
 
 </div>
 </div>

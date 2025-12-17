@@ -228,10 +228,10 @@ Private Attributes</h2></td></tr>
 <p>Begin. </p>
 <dl class="section return"><dt>Returns</dt><dd>iterator to first timestamp </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00246">246</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  247</span>{</div>
-<div class="line"><span class="lineno">  248</span>    <span class="keywordflow">return</span> RecordingHistory::iterator(<span class="keyword">this</span>, 0, 0);</div>
-<div class="line"><span class="lineno">  249</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00256">256</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  257</span>{</div>
+<div class="line"><span class="lineno">  258</span>    <span class="keywordflow">return</span> RecordingHistory::iterator(<span class="keyword">this</span>, 0, 0);</div>
+<div class="line"><span class="lineno">  259</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -253,16 +253,16 @@ Private Attributes</h2></td></tr>
 <p>Clear. </p>
 <dl class="section note"><dt>Note</dt><dd>clears list and vectors </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00231">231</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  232</span>{</div>
-<div class="line"><span class="lineno">  233</span>    type::iterator iter = <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.begin();</div>
-<div class="line"><span class="lineno">  234</span>    <span class="keywordflow">while</span> (iter != <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.end())</div>
-<div class="line"><span class="lineno">  235</span>    {</div>
-<div class="line"><span class="lineno">  236</span>        iter-&gt;Clear();</div>
-<div class="line"><span class="lineno">  237</span>        iter++;</div>
-<div class="line"><span class="lineno">  238</span>    }</div>
-<div class="line"><span class="lineno">  239</span>    <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.clear();</div>
-<div class="line"><span class="lineno">  240</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00241">241</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  242</span>{</div>
+<div class="line"><span class="lineno">  243</span>    type::iterator iter = <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.begin();</div>
+<div class="line"><span class="lineno">  244</span>    <span class="keywordflow">while</span> (iter != <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.end())</div>
+<div class="line"><span class="lineno">  245</span>    {</div>
+<div class="line"><span class="lineno">  246</span>        iter-&gt;Clear();</div>
+<div class="line"><span class="lineno">  247</span>        iter++;</div>
+<div class="line"><span class="lineno">  248</span>    }</div>
+<div class="line"><span class="lineno">  249</span>    <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.clear();</div>
+<div class="line"><span class="lineno">  250</span>}</div>
 <div class="ttc" id="aclass_recording_history_html_a30c60d284b85c80e6e7513b69665564f"><div class="ttname"><a href="#a30c60d284b85c80e6e7513b69665564f">RecordingHistory::_data</a></div><div class="ttdeci">type _data</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8h_source.html#l00341">RecordingContainers.h:341</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -293,10 +293,10 @@ Private Attributes</h2></td></tr>
 <p>Empty. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if no timestamps saved </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00222">222</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  223</span>{</div>
-<div class="line"><span class="lineno">  224</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.empty();</div>
-<div class="line"><span class="lineno">  225</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00232">232</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  233</span>{</div>
+<div class="line"><span class="lineno">  234</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.empty();</div>
+<div class="line"><span class="lineno">  235</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -326,15 +326,15 @@ Private Attributes</h2></td></tr>
 <p>End. </p>
 <dl class="section return"><dt>Returns</dt><dd>iterator out of range </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00255">255</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  256</span>{</div>
-<div class="line"><span class="lineno">  257</span>    <span class="keywordtype">int</span> last_index = 0;</div>
-<div class="line"><span class="lineno">  258</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.empty())</div>
-<div class="line"><span class="lineno">  259</span>    {</div>
-<div class="line"><span class="lineno">  260</span>        last_index = <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.back().Get_container().size();</div>
-<div class="line"><span class="lineno">  261</span>    }</div>
-<div class="line"><span class="lineno">  262</span>    <span class="keywordflow">return</span> RecordingHistory::iterator(<span class="keyword">this</span>, <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.size(), last_index);</div>
-<div class="line"><span class="lineno">  263</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00265">265</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  266</span>{</div>
+<div class="line"><span class="lineno">  267</span>    <span class="keywordtype">int</span> last_index = 0;</div>
+<div class="line"><span class="lineno">  268</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.empty())</div>
+<div class="line"><span class="lineno">  269</span>    {</div>
+<div class="line"><span class="lineno">  270</span>        last_index = <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.back().Get_container().size();</div>
+<div class="line"><span class="lineno">  271</span>    }</div>
+<div class="line"><span class="lineno">  272</span>    <span class="keywordflow">return</span> RecordingHistory::iterator(<span class="keyword">this</span>, <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.size(), last_index);</div>
+<div class="line"><span class="lineno">  273</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -362,16 +362,23 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get_before_newest_recordingVector. </p>
-<dl class="section return"><dt>Returns</dt><dd>one before newest <a class="el" href="class_recording_vector.html">RecordingVector</a> containing new data read </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>one before newest <a class="el" href="class_recording_vector.html">RecordingVector</a> containing new data read</dd>
+<dd>
+one before newest <a class="el" href="class_recording_vector.html">RecordingVector</a> containing new data read. If _data only has 1 <a class="el" href="class_recording_vector.html">RecordingVector</a> it returns empty <a class="el" href="class_recording_vector.html">RecordingVector</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00152">152</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  153</span>{</div>
-<div class="line"><span class="lineno">  154</span>    type::const_iterator iter = <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.end();</div>
-<div class="line"><span class="lineno">  155</span>    iter--;</div>
-<div class="line"><span class="lineno">  156</span>    iter--;</div>
-<div class="line"><span class="lineno">  157</span> </div>
-<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">return</span> *iter;</div>
-<div class="line"><span class="lineno">  159</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00157">157</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>{</div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.size() &gt;= 2)</div>
+<div class="line"><span class="lineno">  160</span>    {</div>
+<div class="line"><span class="lineno">  161</span>        type::const_iterator iter = <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.end();</div>
+<div class="line"><span class="lineno">  162</span>        iter--;</div>
+<div class="line"><span class="lineno">  163</span>        iter--;</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>        <span class="keywordflow">return</span> *iter;</div>
+<div class="line"><span class="lineno">  166</span>    }</div>
+<div class="line"><span class="lineno">  167</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  168</span>        <span class="keywordflow">return</span> RecordingVector();</div>
+<div class="line"><span class="lineno">  169</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -402,10 +409,10 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>list of vectors with timestamps </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>readonly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00166">166</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  167</span>{</div>
-<div class="line"><span class="lineno">  168</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>;</div>
-<div class="line"><span class="lineno">  169</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00176">176</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  177</span>{</div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>;</div>
+<div class="line"><span class="lineno">  179</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -433,12 +440,17 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get_newest_recordingVector. </p>
-<dl class="section return"><dt>Returns</dt><dd>newest <a class="el" href="class_recording_vector.html">RecordingVector</a> containing new data read </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>newest <a class="el" href="class_recording_vector.html">RecordingVector</a> containing new data read</dd>
+<dd>
+newest <a class="el" href="class_recording_vector.html">RecordingVector</a> containing new data read If _data is empty it returns empty <a class="el" href="class_recording_vector.html">RecordingVector</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00143">143</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  144</span>{</div>
-<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.back();</div>
-<div class="line"><span class="lineno">  146</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00144">144</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  145</span>{</div>
+<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.empty())</div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">return</span> RecordingVector();</div>
+<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.back();</div>
+<div class="line"><span class="lineno">  150</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -539,19 +551,19 @@ Private Attributes</h2></td></tr>
 <p>Pop_recordingVector. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if pop finished with success </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00175">175</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  176</span>{</div>
-<div class="line"><span class="lineno">  177</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.empty())</div>
-<div class="line"><span class="lineno">  178</span>    {</div>
-<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  180</span>    }</div>
-<div class="line"><span class="lineno">  181</span>    <span class="keyword">const</span> RangeParams&amp; last_params = <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.front().Get_recording_params();</div>
-<div class="line"><span class="lineno">  182</span>    <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._max_index -= last_params.<a class="code hl_function" href="struct_range_params.html#a1b623d8bdd9b547009599062066cb2c3">Get_max_index</a>();</div>
-<div class="line"><span class="lineno">  183</span>    <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.pop_front();</div>
-<div class="line"><span class="lineno">  184</span>    <span class="keyword">const</span> RangeParams&amp; new_last_params = <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.front().Get_recording_params();</div>
-<div class="line"><span class="lineno">  185</span>    <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._time_range.first = new_last_params.<a class="code hl_function" href="struct_range_params.html#a96a0849ee0ada8b650b31e5e39b92c2f">Get_min_time</a>();</div>
-<div class="line"><span class="lineno">  186</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  187</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00185">185</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  186</span>{</div>
+<div class="line"><span class="lineno">  187</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.empty())</div>
+<div class="line"><span class="lineno">  188</span>    {</div>
+<div class="line"><span class="lineno">  189</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  190</span>    }</div>
+<div class="line"><span class="lineno">  191</span>    <span class="keyword">const</span> RangeParams&amp; last_params = <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.front().Get_recording_params();</div>
+<div class="line"><span class="lineno">  192</span>    <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._max_index -= last_params.<a class="code hl_function" href="struct_range_params.html#a1b623d8bdd9b547009599062066cb2c3">Get_max_index</a>();</div>
+<div class="line"><span class="lineno">  193</span>    <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.pop_front();</div>
+<div class="line"><span class="lineno">  194</span>    <span class="keyword">const</span> RangeParams&amp; new_last_params = <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.front().Get_recording_params();</div>
+<div class="line"><span class="lineno">  195</span>    <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._time_range.first = new_last_params.<a class="code hl_function" href="struct_range_params.html#a96a0849ee0ada8b650b31e5e39b92c2f">Get_min_time</a>();</div>
+<div class="line"><span class="lineno">  196</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  197</span>}</div>
 <div class="ttc" id="astruct_range_params_html_a1b623d8bdd9b547009599062066cb2c3"><div class="ttname"><a href="struct_range_params.html#a1b623d8bdd9b547009599062066cb2c3">RangeParams::Get_max_index</a></div><div class="ttdeci">int Get_max_index() const</div><div class="ttdoc">Get_max_index.</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8h_source.html#l00106">RecordingContainers.h:106</a></div></div>
 <div class="ttc" id="astruct_range_params_html_a96a0849ee0ada8b650b31e5e39b92c2f"><div class="ttname"><a href="struct_range_params.html#a96a0849ee0ada8b650b31e5e39b92c2f">RangeParams::Get_min_time</a></div><div class="ttdeci">double Get_min_time() const</div><div class="ttdoc">Get_min_time.</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8h_source.html#l00097">RecordingContainers.h:97</a></div></div>
 </div><!-- fragment -->
@@ -582,29 +594,29 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if push finished with success </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>move semantic </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00195">195</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  196</span>{</div>
-<div class="line"><span class="lineno">  197</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.size() &gt;= <a class="code hl_variable" href="#a6914d64cf380c69811cc19eb64c79819">_recordingVectors_limit</a>)</div>
-<div class="line"><span class="lineno">  198</span>        <a class="code hl_function" href="#a3172b92029af6a2d6bf233fb01cd41a3">Pop_recordingVector</a>();</div>
-<div class="line"><span class="lineno">  199</span>    <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.push_back(vec);</div>
-<div class="line"><span class="lineno">  200</span>    <span class="keyword">const</span> RangeParams new_params = vec.<a class="code hl_function" href="class_recording_vector.html#a7cf6dc0f2e49cfa07322914280edde3b">Get_recording_params</a>();</div>
-<div class="line"><span class="lineno">  201</span>    <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._max_index += new_params.<a class="code hl_function" href="struct_range_params.html#a1b623d8bdd9b547009599062066cb2c3">Get_max_index</a>();</div>
-<div class="line"><span class="lineno">  202</span> </div>
-<div class="line"><span class="lineno">  203</span>    <span class="keyword">auto</span> [min_voltage, max_voltage] = <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._voltage_range;</div>
-<div class="line"><span class="lineno">  204</span>    <span class="keywordflow">if</span> (min_voltage &gt; new_params.<a class="code hl_function" href="struct_range_params.html#a2d564481dc35fc1c78839ab2fd924aa5">Get_min_voltage</a>())</div>
-<div class="line"><span class="lineno">  205</span>    {</div>
-<div class="line"><span class="lineno">  206</span>        <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._voltage_range.first = new_params.<a class="code hl_function" href="struct_range_params.html#a2d564481dc35fc1c78839ab2fd924aa5">Get_min_voltage</a>();</div>
-<div class="line"><span class="lineno">  207</span>    }</div>
-<div class="line"><span class="lineno">  208</span>    <span class="keywordflow">if</span> (max_voltage &lt; new_params.<a class="code hl_function" href="struct_range_params.html#ae60ce0f98d3ae5beae159177d348aa75">Get_max_voltage</a>())</div>
-<div class="line"><span class="lineno">  209</span>    {</div>
-<div class="line"><span class="lineno">  210</span>        <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._voltage_range.second = new_params.<a class="code hl_function" href="struct_range_params.html#ae60ce0f98d3ae5beae159177d348aa75">Get_max_voltage</a>();</div>
-<div class="line"><span class="lineno">  211</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00205">205</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  206</span>{</div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.size() &gt;= <a class="code hl_variable" href="#a6914d64cf380c69811cc19eb64c79819">_recordingVectors_limit</a>)</div>
+<div class="line"><span class="lineno">  208</span>        <a class="code hl_function" href="#a3172b92029af6a2d6bf233fb01cd41a3">Pop_recordingVector</a>();</div>
+<div class="line"><span class="lineno">  209</span>    <a class="code hl_variable" href="#a30c60d284b85c80e6e7513b69665564f">_data</a>.push_back(vec);</div>
+<div class="line"><span class="lineno">  210</span>    <span class="keyword">const</span> RangeParams new_params = vec.<a class="code hl_function" href="class_recording_vector.html#a7cf6dc0f2e49cfa07322914280edde3b">Get_recording_params</a>();</div>
+<div class="line"><span class="lineno">  211</span>    <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._max_index += new_params.<a class="code hl_function" href="struct_range_params.html#a1b623d8bdd9b547009599062066cb2c3">Get_max_index</a>();</div>
 <div class="line"><span class="lineno">  212</span> </div>
-<div class="line"><span class="lineno">  213</span>    <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._time_range.second = new_params.<a class="code hl_function" href="struct_range_params.html#ad140e4d5f1669090332a3f4c98d2cb5b">Get_max_time</a>();</div>
-<div class="line"><span class="lineno">  214</span> </div>
-<div class="line"><span class="lineno">  215</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  216</span>}</div>
-<div class="ttc" id="aclass_recording_history_html_a3172b92029af6a2d6bf233fb01cd41a3"><div class="ttname"><a href="#a3172b92029af6a2d6bf233fb01cd41a3">RecordingHistory::Pop_recordingVector</a></div><div class="ttdeci">bool Pop_recordingVector()</div><div class="ttdoc">Pop_recordingVector.</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8cpp_source.html#l00175">RecordingContainers.cpp:175</a></div></div>
+<div class="line"><span class="lineno">  213</span>    <span class="keyword">auto</span> [min_voltage, max_voltage] = <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._voltage_range;</div>
+<div class="line"><span class="lineno">  214</span>    <span class="keywordflow">if</span> (min_voltage &gt; new_params.<a class="code hl_function" href="struct_range_params.html#a2d564481dc35fc1c78839ab2fd924aa5">Get_min_voltage</a>())</div>
+<div class="line"><span class="lineno">  215</span>    {</div>
+<div class="line"><span class="lineno">  216</span>        <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._voltage_range.first = new_params.<a class="code hl_function" href="struct_range_params.html#a2d564481dc35fc1c78839ab2fd924aa5">Get_min_voltage</a>();</div>
+<div class="line"><span class="lineno">  217</span>    }</div>
+<div class="line"><span class="lineno">  218</span>    <span class="keywordflow">if</span> (max_voltage &lt; new_params.<a class="code hl_function" href="struct_range_params.html#ae60ce0f98d3ae5beae159177d348aa75">Get_max_voltage</a>())</div>
+<div class="line"><span class="lineno">  219</span>    {</div>
+<div class="line"><span class="lineno">  220</span>        <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._voltage_range.second = new_params.<a class="code hl_function" href="struct_range_params.html#ae60ce0f98d3ae5beae159177d348aa75">Get_max_voltage</a>();</div>
+<div class="line"><span class="lineno">  221</span>    }</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>    <a class="code hl_variable" href="#a9127633232599d345079cd86f7bff26c">_params</a>._time_range.second = new_params.<a class="code hl_function" href="struct_range_params.html#ad140e4d5f1669090332a3f4c98d2cb5b">Get_max_time</a>();</div>
+<div class="line"><span class="lineno">  224</span> </div>
+<div class="line"><span class="lineno">  225</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  226</span>}</div>
+<div class="ttc" id="aclass_recording_history_html_a3172b92029af6a2d6bf233fb01cd41a3"><div class="ttname"><a href="#a3172b92029af6a2d6bf233fb01cd41a3">RecordingHistory::Pop_recordingVector</a></div><div class="ttdeci">bool Pop_recordingVector()</div><div class="ttdoc">Pop_recordingVector.</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8cpp_source.html#l00185">RecordingContainers.cpp:185</a></div></div>
 <div class="ttc" id="aclass_recording_history_html_a6914d64cf380c69811cc19eb64c79819"><div class="ttname"><a href="#a6914d64cf380c69811cc19eb64c79819">RecordingHistory::_recordingVectors_limit</a></div><div class="ttdeci">int _recordingVectors_limit</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8h_source.html#l00343">RecordingContainers.h:343</a></div></div>
 <div class="ttc" id="aclass_recording_vector_html_a7cf6dc0f2e49cfa07322914280edde3b"><div class="ttname"><a href="class_recording_vector.html#a7cf6dc0f2e49cfa07322914280edde3b">RecordingVector::Get_recording_params</a></div><div class="ttdeci">RangeParams Get_recording_params() const</div><div class="ttdoc">Get_recording_params.</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8cpp_source.html#l00008">RecordingContainers.cpp:8</a></div></div>
 <div class="ttc" id="astruct_range_params_html_a2d564481dc35fc1c78839ab2fd924aa5"><div class="ttname"><a href="struct_range_params.html#a2d564481dc35fc1c78839ab2fd924aa5">RangeParams::Get_min_voltage</a></div><div class="ttdeci">double Get_min_voltage() const</div><div class="ttdoc">Get_min_voltage.</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8h_source.html#l00079">RecordingContainers.h:79</a></div></div>

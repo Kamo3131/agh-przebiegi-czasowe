@@ -108,8 +108,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a679c36ed4b93979c8511dc46dd28fe47" id="r_a679c36ed4b93979c8511dc46dd28fe47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a679c36ed4b93979c8511dc46dd28fe47">FileReader</a> (const std::string_view &amp;fname=&quot;tmp&quot;, double start_time=0.0f)</td></tr>
 <tr class="memitem:ae444ae143f6f2e9fbf637a1ce8e4de2e" id="r_ae444ae143f6f2e9fbf637a1ce8e4de2e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_recording_history.html">RecordingHistory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae444ae143f6f2e9fbf637a1ce8e4de2e">Get_data</a> () const override</td></tr>
 <tr class="memdesc:ae444ae143f6f2e9fbf637a1ce8e4de2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get_data.  <br /></td></tr>
+<tr class="memitem:a4ffd95bb149d1291cff0f81b558e1070" id="r_a4ffd95bb149d1291cff0f81b558e1070"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370f">ReaderState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ffd95bb149d1291cff0f81b558e1070">Get_state</a> () const override</td></tr>
+<tr class="memdesc:a4ffd95bb149d1291cff0f81b558e1070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get_state.  <br /></td></tr>
 <tr class="memitem:ac1281c52b4cc9e36f7b3f4fc6cca9dbc" id="r_ac1281c52b4cc9e36f7b3f4fc6cca9dbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1281c52b4cc9e36f7b3f4fc6cca9dbc">Set_file</a> (const std::string_view &amp;fname) override</td></tr>
 <tr class="memdesc:ac1281c52b4cc9e36f7b3f4fc6cca9dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set_file.  <br /></td></tr>
+<tr class="memitem:af071db2083dc565c506d605a44e2ba40" id="r_af071db2083dc565c506d605a44e2ba40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af071db2083dc565c506d605a44e2ba40">Set_history_time_limit</a> (int limit_in_sec) override</td></tr>
+<tr class="memdesc:af071db2083dc565c506d605a44e2ba40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set_history_time_limit.  <br /></td></tr>
 <tr class="memitem:a8adffc3fc346d580238ac6084e748149" id="r_a8adffc3fc346d580238ac6084e748149"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8adffc3fc346d580238ac6084e748149">Start</a> () override</td></tr>
 <tr class="memdesc:a8adffc3fc346d580238ac6084e748149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start.  <br /></td></tr>
 <tr class="memitem:adf603b2bd25349e1d72a5e3d1dc0d719" id="r_adf603b2bd25349e1d72a5e3d1dc0d719"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf603b2bd25349e1d72a5e3d1dc0d719">Stop</a> () override</td></tr>
@@ -134,6 +138,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:afaea0f1f5170603f82bbcb607ffacd5e" id="r_afaea0f1f5170603f82bbcb607ffacd5e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afaea0f1f5170603f82bbcb607ffacd5e">_fname</a></td></tr>
 <tr class="memitem:aacd7c259e696be894f3b38f052cf8dab" id="r_aacd7c259e696be894f3b38f052cf8dab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_recording_history.html">RecordingHistory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a></td></tr>
 <tr class="memitem:a7cf1039d63ebfad1e1d8be870d17d774" id="r_a7cf1039d63ebfad1e1d8be870d17d774"><td class="memItemLeft" align="right" valign="top">std::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cf1039d63ebfad1e1d8be870d17d774">_thread</a></td></tr>
+<tr class="memitem:a0fcb34c27a75704bcbc9c3180ccae032" id="r_a0fcb34c27a75704bcbc9c3180ccae032"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370f">ReaderState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fcb34c27a75704bcbc9c3180ccae032">_state</a></td></tr>
 <tr class="memitem:a65f897bee35c85b38933fbdecf94af62" id="r_a65f897bee35c85b38933fbdecf94af62"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65f897bee35c85b38933fbdecf94af62">_destroyed</a></td></tr>
 <tr class="memitem:a7492937857d7e809691fbccb73152ed5" id="r_a7492937857d7e809691fbccb73152ed5"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7492937857d7e809691fbccb73152ed5">_destroy_flag</a></td></tr>
 <tr class="memitem:a927ac36955c59c075d5e02ac1077e0cf" id="r_a927ac36955c59c075d5e02ac1077e0cf"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a927ac36955c59c075d5e02ac1077e0cf">_stop_flag</a></td></tr>
@@ -169,14 +174,17 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   11</span>    <a class="code hl_variable" href="#a7492937857d7e809691fbccb73152ed5">_destroy_flag</a> = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   12</span>    <a class="code hl_variable" href="#a7c2cf4ca8104f85a00b7bf1c5a62ad09">_running</a> = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   13</span>    <a class="code hl_variable" href="#a927ac36955c59c075d5e02ac1077e0cf">_stop_flag</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   14</span>}</div>
-<div class="ttc" id="aclass_file_reader_html_a65f897bee35c85b38933fbdecf94af62"><div class="ttname"><a href="#a65f897bee35c85b38933fbdecf94af62">FileReader::_destroyed</a></div><div class="ttdeci">std::atomic_bool _destroyed</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00064">FileReader.h:64</a></div></div>
-<div class="ttc" id="aclass_file_reader_html_a7492937857d7e809691fbccb73152ed5"><div class="ttname"><a href="#a7492937857d7e809691fbccb73152ed5">FileReader::_destroy_flag</a></div><div class="ttdeci">std::atomic_bool _destroy_flag</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00065">FileReader.h:65</a></div></div>
-<div class="ttc" id="aclass_file_reader_html_a76cafaf1785d25a6fd7c6063a0d6b708"><div class="ttname"><a href="#a76cafaf1785d25a6fd7c6063a0d6b708">FileReader::_start_time</a></div><div class="ttdeci">double _start_time</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00057">FileReader.h:57</a></div></div>
-<div class="ttc" id="aclass_file_reader_html_a7c2cf4ca8104f85a00b7bf1c5a62ad09"><div class="ttname"><a href="#a7c2cf4ca8104f85a00b7bf1c5a62ad09">FileReader::_running</a></div><div class="ttdeci">std::atomic_bool _running</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00067">FileReader.h:67</a></div></div>
-<div class="ttc" id="aclass_file_reader_html_a7cf1039d63ebfad1e1d8be870d17d774"><div class="ttname"><a href="#a7cf1039d63ebfad1e1d8be870d17d774">FileReader::_thread</a></div><div class="ttdeci">std::thread _thread</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00061">FileReader.h:61</a></div></div>
-<div class="ttc" id="aclass_file_reader_html_a927ac36955c59c075d5e02ac1077e0cf"><div class="ttname"><a href="#a927ac36955c59c075d5e02ac1077e0cf">FileReader::_stop_flag</a></div><div class="ttdeci">std::atomic_bool _stop_flag</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00066">FileReader.h:66</a></div></div>
-<div class="ttc" id="aclass_file_reader_html_afaea0f1f5170603f82bbcb607ffacd5e"><div class="ttname"><a href="#afaea0f1f5170603f82bbcb607ffacd5e">FileReader::_fname</a></div><div class="ttdeci">std::string _fname</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00059">FileReader.h:59</a></div></div>
+<div class="line"><span class="lineno">   14</span>    <a class="code hl_variable" href="#a0fcb34c27a75704bcbc9c3180ccae032">_state</a> = <a class="code hl_enumvalue" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa98690bf632c29c17c9e4c5a64069903c">ReaderState::CREATED</a>;</div>
+<div class="line"><span class="lineno">   15</span>}</div>
+<div class="ttc" id="a_i_reader_8h_html_a6a8affdb680297d42f6edbc167c9370fa98690bf632c29c17c9e4c5a64069903c"><div class="ttname"><a href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa98690bf632c29c17c9e4c5a64069903c">ReaderState::CREATED</a></div><div class="ttdeci">@ CREATED</div><div class="ttdef"><b>Definition</b> <a href="_i_reader_8h_source.html#l00015">IReader.h:15</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_a0fcb34c27a75704bcbc9c3180ccae032"><div class="ttname"><a href="#a0fcb34c27a75704bcbc9c3180ccae032">FileReader::_state</a></div><div class="ttdeci">ReaderState _state</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00074">FileReader.h:74</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_a65f897bee35c85b38933fbdecf94af62"><div class="ttname"><a href="#a65f897bee35c85b38933fbdecf94af62">FileReader::_destroyed</a></div><div class="ttdeci">std::atomic_bool _destroyed</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00077">FileReader.h:77</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_a7492937857d7e809691fbccb73152ed5"><div class="ttname"><a href="#a7492937857d7e809691fbccb73152ed5">FileReader::_destroy_flag</a></div><div class="ttdeci">std::atomic_bool _destroy_flag</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00078">FileReader.h:78</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_a76cafaf1785d25a6fd7c6063a0d6b708"><div class="ttname"><a href="#a76cafaf1785d25a6fd7c6063a0d6b708">FileReader::_start_time</a></div><div class="ttdeci">double _start_time</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00069">FileReader.h:69</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_a7c2cf4ca8104f85a00b7bf1c5a62ad09"><div class="ttname"><a href="#a7c2cf4ca8104f85a00b7bf1c5a62ad09">FileReader::_running</a></div><div class="ttdeci">std::atomic_bool _running</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00080">FileReader.h:80</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_a7cf1039d63ebfad1e1d8be870d17d774"><div class="ttname"><a href="#a7cf1039d63ebfad1e1d8be870d17d774">FileReader::_thread</a></div><div class="ttdeci">std::thread _thread</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00073">FileReader.h:73</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_a927ac36955c59c075d5e02ac1077e0cf"><div class="ttname"><a href="#a927ac36955c59c075d5e02ac1077e0cf">FileReader::_stop_flag</a></div><div class="ttdeci">std::atomic_bool _stop_flag</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00079">FileReader.h:79</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_afaea0f1f5170603f82bbcb607ffacd5e"><div class="ttname"><a href="#afaea0f1f5170603f82bbcb607ffacd5e">FileReader::_fname</a></div><div class="ttdeci">std::string _fname</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00071">FileReader.h:71</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -195,16 +203,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00162">162</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  163</span>{</div>
-<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a65f897bee35c85b38933fbdecf94af62">_destroyed</a>)</div>
-<div class="line"><span class="lineno">  165</span>    {</div>
-<div class="line"><span class="lineno">  166</span>        <a class="code hl_function" href="#ae77bb7af6de3a60e02074b124ef95e95">Destroy</a>();</div>
-<div class="line"><span class="lineno">  167</span>    }</div>
-<div class="line"><span class="lineno">  168</span>    <a class="code hl_variable" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a>.Clear();</div>
-<div class="line"><span class="lineno">  169</span>}</div>
-<div class="ttc" id="aclass_file_reader_html_aacd7c259e696be894f3b38f052cf8dab"><div class="ttname"><a href="#aacd7c259e696be894f3b38f052cf8dab">FileReader::_data</a></div><div class="ttdeci">RecordingHistory _data</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00060">FileReader.h:60</a></div></div>
-<div class="ttc" id="aclass_file_reader_html_ae77bb7af6de3a60e02074b124ef95e95"><div class="ttname"><a href="#ae77bb7af6de3a60e02074b124ef95e95">FileReader::Destroy</a></div><div class="ttdeci">void Destroy() override</div><div class="ttdoc">Destroy.</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8cpp_source.html#l00155">FileReader.cpp:155</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00189">189</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  190</span>{</div>
+<div class="line"><span class="lineno">  191</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a65f897bee35c85b38933fbdecf94af62">_destroyed</a>)</div>
+<div class="line"><span class="lineno">  192</span>    {</div>
+<div class="line"><span class="lineno">  193</span>        <a class="code hl_function" href="#ae77bb7af6de3a60e02074b124ef95e95">Destroy</a>();</div>
+<div class="line"><span class="lineno">  194</span>    }</div>
+<div class="line"><span class="lineno">  195</span>    <a class="code hl_variable" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a>.Clear();</div>
+<div class="line"><span class="lineno">  196</span>}</div>
+<div class="ttc" id="aclass_file_reader_html_aacd7c259e696be894f3b38f052cf8dab"><div class="ttname"><a href="#aacd7c259e696be894f3b38f052cf8dab">FileReader::_data</a></div><div class="ttdeci">RecordingHistory _data</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00072">FileReader.h:72</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_ae77bb7af6de3a60e02074b124ef95e95"><div class="ttname"><a href="#ae77bb7af6de3a60e02074b124ef95e95">FileReader::Destroy</a></div><div class="ttdeci">void Destroy() override</div><div class="ttdoc">Destroy.</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8cpp_source.html#l00181">FileReader.cpp:181</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -237,12 +245,14 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_i_reader.html#ac4df56a5cedaf7db64daed9ff92a0ab6">IReader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00155">155</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  156</span>{</div>
-<div class="line"><span class="lineno">  157</span>    <a class="code hl_variable" href="#a7492937857d7e809691fbccb73152ed5">_destroy_flag</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a7cf1039d63ebfad1e1d8be870d17d774">_thread</a>.joinable())</div>
-<div class="line"><span class="lineno">  159</span>        <a class="code hl_variable" href="#a7cf1039d63ebfad1e1d8be870d17d774">_thread</a>.join();</div>
-<div class="line"><span class="lineno">  160</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00181">181</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  182</span>{</div>
+<div class="line"><span class="lineno">  183</span>    <a class="code hl_variable" href="#a7492937857d7e809691fbccb73152ed5">_destroy_flag</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  184</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a7cf1039d63ebfad1e1d8be870d17d774">_thread</a>.joinable())</div>
+<div class="line"><span class="lineno">  185</span>        <a class="code hl_variable" href="#a7cf1039d63ebfad1e1d8be870d17d774">_thread</a>.join();</div>
+<div class="line"><span class="lineno">  186</span>    <a class="code hl_variable" href="#a0fcb34c27a75704bcbc9c3180ccae032">_state</a> = <a class="code hl_enumvalue" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa5d7e41d3ac0abca5974598807df874ea">ReaderState::DESTROYED</a>;</div>
+<div class="line"><span class="lineno">  187</span>}</div>
+<div class="ttc" id="a_i_reader_8h_html_a6a8affdb680297d42f6edbc167c9370fa5d7e41d3ac0abca5974598807df874ea"><div class="ttname"><a href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa5d7e41d3ac0abca5974598807df874ea">ReaderState::DESTROYED</a></div><div class="ttdeci">@ DESTROYED</div><div class="ttdef"><b>Definition</b> <a href="_i_reader_8h_source.html#l00019">IReader.h:19</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -282,14 +292,49 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_i_reader.html#a95882e225a14119d93aadffd330813d1">IReader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00021">21</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a>.Empty())</div>
-<div class="line"><span class="lineno">   24</span>    {</div>
-<div class="line"><span class="lineno">   25</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Empty data&quot;</span>);</div>
-<div class="line"><span class="lineno">   26</span>    }</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a>;</div>
-<div class="line"><span class="lineno">   28</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00022">22</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a>.Empty())</div>
+<div class="line"><span class="lineno">   25</span>    {</div>
+<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Empty data&quot;</span>);</div>
+<div class="line"><span class="lineno">   27</span>    }</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a>;</div>
+<div class="line"><span class="lineno">   29</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4ffd95bb149d1291cff0f81b558e1070" name="a4ffd95bb149d1291cff0f81b558e1070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ffd95bb149d1291cff0f81b558e1070">&#9670;&#160;</a></span>Get_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370f">ReaderState</a> FileReader::Get_state </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get_state. </p>
+<dl class="section return"><dt>Returns</dt><dd>state of the reader </dd></dl>
+
+<p>Implements <a class="el" href="class_i_reader.html#a81bc1034a8cdf3a5b95d11499507ebdb">IReader</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00035">35</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a0fcb34c27a75704bcbc9c3180ccae032">_state</a>;</div>
+<div class="line"><span class="lineno">   38</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -321,10 +366,12 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_i_reader.html#a8b06070423a5d1334ab5ac787f5a273c">IReader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00146">146</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  147</span>{</div>
-<div class="line"><span class="lineno">  148</span>    <a class="code hl_variable" href="#a927ac36955c59c075d5e02ac1077e0cf">_stop_flag</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  149</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00171">171</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  172</span>{</div>
+<div class="line"><span class="lineno">  173</span>    <a class="code hl_variable" href="#a927ac36955c59c075d5e02ac1077e0cf">_stop_flag</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  174</span>    <a class="code hl_variable" href="#a0fcb34c27a75704bcbc9c3180ccae032">_state</a> = <a class="code hl_enumvalue" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa1869d56535e8b1449a6da54ff5e11f50">ReaderState::WAITING</a>;</div>
+<div class="line"><span class="lineno">  175</span>}</div>
+<div class="ttc" id="a_i_reader_8h_html_a6a8affdb680297d42f6edbc167c9370fa1869d56535e8b1449a6da54ff5e11f50"><div class="ttname"><a href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa1869d56535e8b1449a6da54ff5e11f50">ReaderState::WAITING</a></div><div class="ttdeci">@ WAITING</div><div class="ttdef"><b>Definition</b> <a href="_i_reader_8h_source.html#l00016">IReader.h:16</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -354,83 +401,89 @@ Private Attributes</h2></td></tr>
 <p>running_loop </p>
 <dl class="section note"><dt>Note</dt><dd>loop in which <a class="el" href="class_reader.html">Reader</a> reads data </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00045">45</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>{</div>
-<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a7c2cf4ca8104f85a00b7bf1c5a62ad09">_running</a>)</div>
-<div class="line"><span class="lineno">   48</span>    {</div>
-<div class="line"><span class="lineno">   49</span>        <span class="keyword">const</span> std::chrono::duration sleep_time_running = std::chrono::seconds(1);</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keyword">const</span> std::chrono::duration sleep_time_stopped = std::chrono::milliseconds(100);</div>
-<div class="line"><span class="lineno">   51</span>        <a class="code hl_variable" href="#a7c2cf4ca8104f85a00b7bf1c5a62ad09">_running</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   52</span>        <a class="code hl_variable" href="#a65f897bee35c85b38933fbdecf94af62">_destroyed</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">while</span> (!<a class="code hl_variable" href="#a7492937857d7e809691fbccb73152ed5">_destroy_flag</a>)</div>
-<div class="line"><span class="lineno">   54</span>        {</div>
-<div class="line"><span class="lineno">   55</span>            <span class="keywordflow">if</span> (std::filesystem::exists(<a class="code hl_variable" href="#afaea0f1f5170603f82bbcb607ffacd5e">_fname</a>))</div>
-<div class="line"><span class="lineno">   56</span>            {</div>
-<div class="line"><span class="lineno">   57</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a927ac36955c59c075d5e02ac1077e0cf">_stop_flag</a>)</div>
-<div class="line"><span class="lineno">   58</span>                {</div>
-<div class="line"><span class="lineno">   59</span>                    std::this_thread::sleep_for(sleep_time_stopped);</div>
-<div class="line"><span class="lineno">   60</span>                }</div>
-<div class="line"><span class="lineno">   61</span>                <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   62</span>                {</div>
-<div class="line"><span class="lineno">   63</span>                    <a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a>.open(<a class="code hl_variable" href="#afaea0f1f5170603f82bbcb607ffacd5e">_fname</a>);</div>
-<div class="line"><span class="lineno">   64</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a>.is_open())</div>
-<div class="line"><span class="lineno">   65</span>                    {</div>
-<div class="line"><span class="lineno">   66</span>                        <span class="comment">//if file exist read data</span></div>
-<div class="line"><span class="lineno">   67</span>                        RecordingVector vec;</div>
-<div class="line"><span class="lineno">   68</span>                        <span class="keywordtype">double</span> max_voltage = 0.0;</div>
-<div class="line"><span class="lineno">   69</span>                        <span class="keywordtype">double</span> min_voltage = 0.0;</div>
-<div class="line"><span class="lineno">   70</span>                        <span class="keywordtype">double</span> min_time = <a class="code hl_variable" href="#a76cafaf1785d25a6fd7c6063a0d6b708">_start_time</a>;</div>
-<div class="line"><span class="lineno">   71</span>                        <span class="keywordtype">double</span> max_time = 0.0;</div>
-<div class="line"><span class="lineno">   72</span>                        <span class="keywordtype">int</span> index = 0;</div>
-<div class="line"><span class="lineno">   73</span>                        <span class="keywordflow">while</span> (!<a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a>.eof())</div>
-<div class="line"><span class="lineno">   74</span>                        {</div>
-<div class="line"><span class="lineno">   75</span>                            <span class="keywordtype">double</span> time = 0.0f;</div>
-<div class="line"><span class="lineno">   76</span>                            <a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a> &gt;&gt; time;</div>
-<div class="line"><span class="lineno">   77</span>                            <span class="keywordtype">double</span> voltage = 0.0f;</div>
-<div class="line"><span class="lineno">   78</span>                            <a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a> &gt;&gt; voltage;</div>
-<div class="line"><span class="lineno">   79</span>                            <span class="keywordflow">if</span> (voltage &gt; max_voltage)</div>
-<div class="line"><span class="lineno">   80</span>                            {</div>
-<div class="line"><span class="lineno">   81</span>                                max_voltage = voltage;</div>
-<div class="line"><span class="lineno">   82</span>                            }</div>
-<div class="line"><span class="lineno">   83</span>                            time += <a class="code hl_variable" href="#a76cafaf1785d25a6fd7c6063a0d6b708">_start_time</a>;</div>
-<div class="line"><span class="lineno">   84</span>                            </div>
-<div class="line"><span class="lineno">   85</span>                            vec.<a class="code hl_function" href="class_recording_vector.html#a699681ea9edfb5d3b6275935866b892b">Get_container</a>().emplace_back(time, voltage);</div>
-<div class="line"><span class="lineno">   86</span>                            index++;</div>
-<div class="line"><span class="lineno">   87</span>                            max_time = time;</div>
-<div class="line"><span class="lineno">   88</span>                        }</div>
-<div class="line"><span class="lineno">   89</span>                        <a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a>.close();</div>
-<div class="line"><span class="lineno">   90</span>                        <span class="comment">//try to remove file</span></div>
-<div class="line"><span class="lineno">   91</span>                        std::error_code ec;</div>
-<div class="line"><span class="lineno">   92</span>                        std::filesystem::remove(<a class="code hl_variable" href="#afaea0f1f5170603f82bbcb607ffacd5e">_fname</a>, ec);</div>
-<div class="line"><span class="lineno">   93</span>                        <span class="comment">/*if can&#39;t be removed it&#39;s written by Generator, so</span></div>
-<div class="line"><span class="lineno">   94</span><span class="comment">                        try again later */</span></div>
-<div class="line"><span class="lineno">   95</span>                        <span class="keywordflow">if</span> (!ec)</div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00064">64</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a7c2cf4ca8104f85a00b7bf1c5a62ad09">_running</a>)</div>
+<div class="line"><span class="lineno">   67</span>    {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keyword">const</span> std::chrono::duration sleep_time_running = std::chrono::seconds(1);</div>
+<div class="line"><span class="lineno">   69</span>        <span class="keyword">const</span> std::chrono::duration sleep_time_stopped = std::chrono::milliseconds(100);</div>
+<div class="line"><span class="lineno">   70</span>        <a class="code hl_variable" href="#a7c2cf4ca8104f85a00b7bf1c5a62ad09">_running</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_variable" href="#a65f897bee35c85b38933fbdecf94af62">_destroyed</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">while</span> (!<a class="code hl_variable" href="#a7492937857d7e809691fbccb73152ed5">_destroy_flag</a>)</div>
+<div class="line"><span class="lineno">   73</span>        {</div>
+<div class="line"><span class="lineno">   74</span>            <span class="keywordflow">if</span> (std::filesystem::exists(<a class="code hl_variable" href="#afaea0f1f5170603f82bbcb607ffacd5e">_fname</a>))</div>
+<div class="line"><span class="lineno">   75</span>            {</div>
+<div class="line"><span class="lineno">   76</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a927ac36955c59c075d5e02ac1077e0cf">_stop_flag</a>)</div>
+<div class="line"><span class="lineno">   77</span>                {</div>
+<div class="line"><span class="lineno">   78</span>                    <a class="code hl_variable" href="#a0fcb34c27a75704bcbc9c3180ccae032">_state</a> = <a class="code hl_enumvalue" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa1869d56535e8b1449a6da54ff5e11f50">ReaderState::WAITING</a>;</div>
+<div class="line"><span class="lineno">   79</span>                    std::this_thread::sleep_for(sleep_time_stopped);</div>
+<div class="line"><span class="lineno">   80</span>                }</div>
+<div class="line"><span class="lineno">   81</span>                <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   82</span>                {</div>
+<div class="line"><span class="lineno">   83</span>                    </div>
+<div class="line"><span class="lineno">   84</span>                    <a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a>.open(<a class="code hl_variable" href="#afaea0f1f5170603f82bbcb607ffacd5e">_fname</a>);</div>
+<div class="line"><span class="lineno">   85</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a>.is_open())</div>
+<div class="line"><span class="lineno">   86</span>                    {</div>
+<div class="line"><span class="lineno">   87</span>                        <a class="code hl_variable" href="#a0fcb34c27a75704bcbc9c3180ccae032">_state</a> = <a class="code hl_enumvalue" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fac095dae5b00525bc0e6ad76117ff5cdb">ReaderState::READING</a>;</div>
+<div class="line"><span class="lineno">   88</span>                        <span class="comment">//if file exist read data</span></div>
+<div class="line"><span class="lineno">   89</span>                        RecordingVector vec;</div>
+<div class="line"><span class="lineno">   90</span>                        <span class="keywordtype">double</span> max_voltage = 0.0;</div>
+<div class="line"><span class="lineno">   91</span>                        <span class="keywordtype">double</span> min_voltage = 0.0;</div>
+<div class="line"><span class="lineno">   92</span>                        <span class="keywordtype">double</span> min_time = <a class="code hl_variable" href="#a76cafaf1785d25a6fd7c6063a0d6b708">_start_time</a>;</div>
+<div class="line"><span class="lineno">   93</span>                        <span class="keywordtype">double</span> max_time = 0.0;</div>
+<div class="line"><span class="lineno">   94</span>                        <span class="keywordtype">int</span> index = 0;</div>
+<div class="line"><span class="lineno">   95</span>                        <span class="keywordflow">while</span> (!<a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a>.eof())</div>
 <div class="line"><span class="lineno">   96</span>                        {</div>
-<div class="line"><span class="lineno">   97</span>                            RangeParams params({min_voltage, max_voltage},</div>
-<div class="line"><span class="lineno">   98</span>                            {min_time, max_time}, index);</div>
-<div class="line"><span class="lineno">   99</span>                            vec.<a class="code hl_function" href="class_recording_vector.html#ad50dfd02eaf274f1efb0dd9378a70a4d">Set_recording_params</a>(params);</div>
-<div class="line"><span class="lineno">  100</span>                            <a class="code hl_variable" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a>.Push_recordingVector(std::move(vec));</div>
-<div class="line"><span class="lineno">  101</span>                            <a class="code hl_variable" href="#a76cafaf1785d25a6fd7c6063a0d6b708">_start_time</a> = max_time;</div>
-<div class="line"><span class="lineno">  102</span>                        }</div>
-<div class="line"><span class="lineno">  103</span>                        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  104</span>                        {</div>
-<div class="line"><span class="lineno">  105</span>                            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  106</span>                        }</div>
-<div class="line"><span class="lineno">  107</span>                        std::this_thread::sleep_for(sleep_time_running);</div>
-<div class="line"><span class="lineno">  108</span>                    }</div>
-<div class="line"><span class="lineno">  109</span>                    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  110</span>                    {</div>
-<div class="line"><span class="lineno">  111</span>                        std::this_thread::sleep_for(sleep_time_stopped);</div>
-<div class="line"><span class="lineno">  112</span>                    }</div>
-<div class="line"><span class="lineno">  113</span>                }</div>
-<div class="line"><span class="lineno">  114</span>                </div>
-<div class="line"><span class="lineno">  115</span>            }</div>
-<div class="line"><span class="lineno">  116</span>        }</div>
-<div class="line"><span class="lineno">  117</span>        <a class="code hl_variable" href="#a7c2cf4ca8104f85a00b7bf1c5a62ad09">_running</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  118</span>        <a class="code hl_variable" href="#a65f897bee35c85b38933fbdecf94af62">_destroyed</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  119</span>    }</div>
-<div class="line"><span class="lineno">  120</span>}</div>
-<div class="ttc" id="aclass_file_reader_html_ae68ea23b3fb9c637566d59b08eae5f27"><div class="ttname"><a href="#ae68ea23b3fb9c637566d59b08eae5f27">FileReader::_file</a></div><div class="ttdeci">std::ifstream _file</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00058">FileReader.h:58</a></div></div>
+<div class="line"><span class="lineno">   97</span>                            <span class="keywordtype">double</span> time = 0.0f;</div>
+<div class="line"><span class="lineno">   98</span>                            <a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a> &gt;&gt; time;</div>
+<div class="line"><span class="lineno">   99</span>                            <span class="keywordtype">double</span> voltage = 0.0f;</div>
+<div class="line"><span class="lineno">  100</span>                            <a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a> &gt;&gt; voltage;</div>
+<div class="line"><span class="lineno">  101</span>                            <span class="keywordflow">if</span> (voltage &gt; max_voltage)</div>
+<div class="line"><span class="lineno">  102</span>                            {</div>
+<div class="line"><span class="lineno">  103</span>                                max_voltage = voltage;</div>
+<div class="line"><span class="lineno">  104</span>                            }</div>
+<div class="line"><span class="lineno">  105</span>                            time += <a class="code hl_variable" href="#a76cafaf1785d25a6fd7c6063a0d6b708">_start_time</a>;</div>
+<div class="line"><span class="lineno">  106</span>                            </div>
+<div class="line"><span class="lineno">  107</span>                            vec.<a class="code hl_function" href="class_recording_vector.html#a699681ea9edfb5d3b6275935866b892b">Get_container</a>().emplace_back(time, voltage);</div>
+<div class="line"><span class="lineno">  108</span>                            index++;</div>
+<div class="line"><span class="lineno">  109</span>                            max_time = time;</div>
+<div class="line"><span class="lineno">  110</span>                        }</div>
+<div class="line"><span class="lineno">  111</span>                        <a class="code hl_variable" href="#ae68ea23b3fb9c637566d59b08eae5f27">_file</a>.close();</div>
+<div class="line"><span class="lineno">  112</span>                        <span class="comment">//try to remove file</span></div>
+<div class="line"><span class="lineno">  113</span>                        std::error_code ec;</div>
+<div class="line"><span class="lineno">  114</span>                        std::filesystem::remove(<a class="code hl_variable" href="#afaea0f1f5170603f82bbcb607ffacd5e">_fname</a>, ec);</div>
+<div class="line"><span class="lineno">  115</span>                        <span class="comment">/*if can&#39;t be removed it&#39;s written by Generator, so</span></div>
+<div class="line"><span class="lineno">  116</span><span class="comment">                        try again later */</span></div>
+<div class="line"><span class="lineno">  117</span>                        <span class="keywordflow">if</span> (!ec)</div>
+<div class="line"><span class="lineno">  118</span>                        {</div>
+<div class="line"><span class="lineno">  119</span>                            RangeParams params({min_voltage, max_voltage},</div>
+<div class="line"><span class="lineno">  120</span>                            {min_time, max_time}, index);</div>
+<div class="line"><span class="lineno">  121</span>                            vec.<a class="code hl_function" href="class_recording_vector.html#ad50dfd02eaf274f1efb0dd9378a70a4d">Set_recording_params</a>(params);</div>
+<div class="line"><span class="lineno">  122</span>                            <a class="code hl_variable" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a>.Push_recordingVector(std::move(vec));</div>
+<div class="line"><span class="lineno">  123</span>                            <a class="code hl_variable" href="#a76cafaf1785d25a6fd7c6063a0d6b708">_start_time</a> = max_time;</div>
+<div class="line"><span class="lineno">  124</span>                        }</div>
+<div class="line"><span class="lineno">  125</span>                        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  126</span>                        {</div>
+<div class="line"><span class="lineno">  127</span>                            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  128</span>                        }</div>
+<div class="line"><span class="lineno">  129</span>                        <a class="code hl_variable" href="#a0fcb34c27a75704bcbc9c3180ccae032">_state</a> = <a class="code hl_enumvalue" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa1869d56535e8b1449a6da54ff5e11f50">ReaderState::WAITING</a>;</div>
+<div class="line"><span class="lineno">  130</span>                        std::this_thread::sleep_for(sleep_time_running);</div>
+<div class="line"><span class="lineno">  131</span>                    }</div>
+<div class="line"><span class="lineno">  132</span>                    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  133</span>                    {</div>
+<div class="line"><span class="lineno">  134</span>                        <a class="code hl_variable" href="#a0fcb34c27a75704bcbc9c3180ccae032">_state</a> = <a class="code hl_enumvalue" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa1869d56535e8b1449a6da54ff5e11f50">ReaderState::WAITING</a>;</div>
+<div class="line"><span class="lineno">  135</span>                        std::this_thread::sleep_for(sleep_time_stopped);</div>
+<div class="line"><span class="lineno">  136</span>                    }</div>
+<div class="line"><span class="lineno">  137</span>                }</div>
+<div class="line"><span class="lineno">  138</span>                </div>
+<div class="line"><span class="lineno">  139</span>            }</div>
+<div class="line"><span class="lineno">  140</span>        }</div>
+<div class="line"><span class="lineno">  141</span>        <a class="code hl_variable" href="#a7c2cf4ca8104f85a00b7bf1c5a62ad09">_running</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  142</span>        <a class="code hl_variable" href="#a65f897bee35c85b38933fbdecf94af62">_destroyed</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  143</span>    }</div>
+<div class="line"><span class="lineno">  144</span>}</div>
+<div class="ttc" id="a_i_reader_8h_html_a6a8affdb680297d42f6edbc167c9370fac095dae5b00525bc0e6ad76117ff5cdb"><div class="ttname"><a href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fac095dae5b00525bc0e6ad76117ff5cdb">ReaderState::READING</a></div><div class="ttdeci">@ READING</div><div class="ttdef"><b>Definition</b> <a href="_i_reader_8h_source.html#l00017">IReader.h:17</a></div></div>
+<div class="ttc" id="aclass_file_reader_html_ae68ea23b3fb9c637566d59b08eae5f27"><div class="ttname"><a href="#ae68ea23b3fb9c637566d59b08eae5f27">FileReader::_file</a></div><div class="ttdeci">std::ifstream _file</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8h_source.html#l00070">FileReader.h:70</a></div></div>
 <div class="ttc" id="aclass_recording_vector_html_a699681ea9edfb5d3b6275935866b892b"><div class="ttname"><a href="class_recording_vector.html#a699681ea9edfb5d3b6275935866b892b">RecordingVector::Get_container</a></div><div class="ttdeci">const type &amp; Get_container() const</div><div class="ttdoc">Get_container.</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8cpp_source.html#l00027">RecordingContainers.cpp:27</a></div></div>
 <div class="ttc" id="aclass_recording_vector_html_ad50dfd02eaf274f1efb0dd9378a70a4d"><div class="ttname"><a href="class_recording_vector.html#ad50dfd02eaf274f1efb0dd9378a70a4d">RecordingVector::Set_recording_params</a></div><div class="ttdeci">void Set_recording_params(const RangeParams &amp;params)</div><div class="ttdoc">Set_recording_params.</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8cpp_source.html#l00017">RecordingContainers.cpp:17</a></div></div>
 </div><!-- fragment -->
@@ -470,11 +523,51 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_i_reader.html#aa124feddfe068cba8ddaff54e71ab556">IReader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00035">35</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
-<div class="line"><span class="lineno">   37</span>    <a class="code hl_variable" href="#afaea0f1f5170603f82bbcb607ffacd5e">_fname</a> = fname;</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   39</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00045">45</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{</div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_variable" href="#afaea0f1f5170603f82bbcb607ffacd5e">_fname</a> = fname;</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   49</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af071db2083dc565c506d605a44e2ba40" name="af071db2083dc565c506d605a44e2ba40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af071db2083dc565c506d605a44e2ba40">&#9670;&#160;</a></span>Set_history_time_limit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileReader::Set_history_time_limit </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>limit_in_sec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set_history_time_limit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">limit_in_sec</td><td>limit of seconds of input history stored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_i_reader.html#ac851d8ebeb6579bca01e853eb18e1e6b">IReader</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00055">55</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>{</div>
+<div class="line"><span class="lineno">   57</span>    <a class="code hl_variable" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a>.Set_history_time_limit(limit_in_sec);</div>
+<div class="line"><span class="lineno">   58</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -506,11 +599,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_i_reader.html#a93cc93c088750fd7f5cc481d6479adbc">IReader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00126">126</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>{</div>
-<div class="line"><span class="lineno">  128</span>    <a class="code hl_variable" href="#a7cf1039d63ebfad1e1d8be870d17d774">_thread</a> = std::thread(&amp;<a class="code hl_function" href="#a94aa73c917ff8a223544582a76e84681">FileReader::running_loop</a>, <span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  129</span>}</div>
-<div class="ttc" id="aclass_file_reader_html_a94aa73c917ff8a223544582a76e84681"><div class="ttname"><a href="#a94aa73c917ff8a223544582a76e84681">FileReader::running_loop</a></div><div class="ttdeci">void running_loop(void)</div><div class="ttdoc">running_loop</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8cpp_source.html#l00045">FileReader.cpp:45</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00150">150</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_variable" href="#a7cf1039d63ebfad1e1d8be870d17d774">_thread</a> = std::thread(&amp;<a class="code hl_function" href="#a94aa73c917ff8a223544582a76e84681">FileReader::running_loop</a>, <span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  153</span>}</div>
+<div class="ttc" id="aclass_file_reader_html_a94aa73c917ff8a223544582a76e84681"><div class="ttname"><a href="#a94aa73c917ff8a223544582a76e84681">FileReader::running_loop</a></div><div class="ttdeci">void running_loop(void)</div><div class="ttdoc">running_loop</div><div class="ttdef"><b>Definition</b> <a href="_file_reader_8cpp_source.html#l00064">FileReader.cpp:64</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -542,12 +635,14 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="class_i_reader.html#a8855b2f1dc9e40479894e2d836831b7a">IReader</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00135">135</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  136</span>{</div>
-<div class="line"><span class="lineno">  137</span>    <a class="code hl_variable" href="#a927ac36955c59c075d5e02ac1077e0cf">_stop_flag</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  138</span>    <a class="code hl_variable" href="#a76cafaf1785d25a6fd7c6063a0d6b708">_start_time</a> = 0;</div>
-<div class="line"><span class="lineno">  139</span>    <a class="code hl_variable" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a>.Clear();</div>
-<div class="line"><span class="lineno">  140</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8cpp_source.html#l00159">159</a> of file <a class="el" href="_file_reader_8cpp_source.html">FileReader.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  160</span>{</div>
+<div class="line"><span class="lineno">  161</span>    <a class="code hl_variable" href="#a927ac36955c59c075d5e02ac1077e0cf">_stop_flag</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  162</span>    <a class="code hl_variable" href="#a76cafaf1785d25a6fd7c6063a0d6b708">_start_time</a> = 0;</div>
+<div class="line"><span class="lineno">  163</span>    <a class="code hl_variable" href="#aacd7c259e696be894f3b38f052cf8dab">_data</a>.Clear();</div>
+<div class="line"><span class="lineno">  164</span>    <a class="code hl_variable" href="#a0fcb34c27a75704bcbc9c3180ccae032">_state</a> = <a class="code hl_enumvalue" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa09d4d696b4e935115b9313e3c412509a">ReaderState::STOPPED</a>;</div>
+<div class="line"><span class="lineno">  165</span>}</div>
+<div class="ttc" id="a_i_reader_8h_html_a6a8affdb680297d42f6edbc167c9370fa09d4d696b4e935115b9313e3c412509a"><div class="ttname"><a href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa09d4d696b4e935115b9313e3c412509a">ReaderState::STOPPED</a></div><div class="ttdeci">@ STOPPED</div><div class="ttdef"><b>Definition</b> <a href="_i_reader_8h_source.html#l00018">IReader.h:18</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -572,7 +667,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00060">60</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00072">72</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +691,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00065">65</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00078">78</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
 
 </div>
 </div>
@@ -620,7 +715,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00064">64</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00077">77</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
 
 </div>
 </div>
@@ -644,7 +739,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00058">58</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00070">70</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
 
 </div>
 </div>
@@ -668,7 +763,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00059">59</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00071">71</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
 
 </div>
 </div>
@@ -692,7 +787,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00067">67</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00080">80</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
 
 </div>
 </div>
@@ -716,7 +811,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00057">57</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00069">69</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
+
+</div>
+</div>
+<a id="a0fcb34c27a75704bcbc9c3180ccae032" name="a0fcb34c27a75704bcbc9c3180ccae032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fcb34c27a75704bcbc9c3180ccae032">&#9670;&#160;</a></span>_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370f">ReaderState</a> FileReader::_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00074">74</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
 
 </div>
 </div>
@@ -740,7 +859,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00066">66</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00079">79</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
 
 </div>
 </div>
@@ -764,7 +883,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00061">61</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_file_reader_8h_source.html#l00073">73</a> of file <a class="el" href="_file_reader_8h_source.html">FileReader.h</a>.</p>
 
 </div>
 </div>
