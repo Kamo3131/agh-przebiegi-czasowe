@@ -1,7 +1,7 @@
 var searchData=
 [
   ['set_5ffile_0',['Set_file',['../class_file_reader.html#ac1281c52b4cc9e36f7b3f4fc6cca9dbc',1,'FileReader::Set_file()'],['../class_i_reader.html#aa124feddfe068cba8ddaff54e71ab556',1,'IReader::Set_file()']]],
-  ['set_5fhistory_5ftime_5flimit_1',['Set_history_time_limit',['../class_recording_history.html#a68c34f683e6bd7d2cc467876ba0169c7',1,'RecordingHistory']]],
+  ['set_5fhistory_5ftime_5flimit_1',['Set_history_time_limit',['../class_file_reader.html#af071db2083dc565c506d605a44e2ba40',1,'FileReader::Set_history_time_limit()'],['../class_i_reader.html#ac851d8ebeb6579bca01e853eb18e1e6b',1,'IReader::Set_history_time_limit()'],['../class_recording_history.html#a68c34f683e6bd7d2cc467876ba0169c7',1,'RecordingHistory::Set_history_time_limit()']]],
   ['set_5frecording_5fparams_2',['Set_recording_params',['../class_recording_vector.html#ad50dfd02eaf274f1efb0dd9378a70a4d',1,'RecordingVector::Set_recording_params()'],['../class_recording_history.html#aa0b15fda5b87b325c2405004fd0db3c1',1,'RecordingHistory::Set_recording_params()']]],
   ['set_5fvector_3',['Set_vector',['../class_recording_vector.html#aff792a69eca9be0217946a076a95cd0c',1,'RecordingVector::Set_vector(type &amp;&amp;vec)'],['../class_recording_vector.html#ae9f5e69eb149f6f32bc14658d9355eed',1,'RecordingVector::Set_vector(const type &amp;vec)']]],
   ['square_4',['square',['../_func_iterator_8cpp.html#a2a1dab3794defd647617f9f04c8a61d1',1,'FuncIterator.cpp']]],

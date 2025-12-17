@@ -200,37 +200,37 @@ Private Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>constructor to create interator pointing to desired data. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Please use only <a class="el" href="class_recording_history.html#a9b3f48fe6b352571557f4e5def92e146" title="End.">End()</a> and <a class="el" href="class_recording_history.html#a6fc0fbcabc25510be435c20530cb249d" title="Begin.">Begin()</a> to create iterators! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00272">272</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  274</span>{</div>
-<div class="line"><span class="lineno">  275</span>    <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a> = _recHis_ptr;</div>
-<div class="line"><span class="lineno">  276</span>    <span class="keywordflow">if</span> (list_index &gt;= <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().size() || list_index &lt; 0)</div>
-<div class="line"><span class="lineno">  277</span>        <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> = <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().end();</div>
-<div class="line"><span class="lineno">  278</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  279</span>    {</div>
-<div class="line"><span class="lineno">  280</span>        <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> = <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().begin();</div>
-<div class="line"><span class="lineno">  281</span>        <span class="keywordflow">while</span> (list_index &gt; 0)</div>
-<div class="line"><span class="lineno">  282</span>        {</div>
-<div class="line"><span class="lineno">  283</span>            <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>++;</div>
-<div class="line"><span class="lineno">  284</span>            list_index--;</div>
-<div class="line"><span class="lineno">  285</span>        }</div>
-<div class="line"><span class="lineno">  286</span>    }</div>
-<div class="line"><span class="lineno">  287</span> </div>
-<div class="line"><span class="lineno">  288</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> == <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().end())</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00282">282</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  284</span>{</div>
+<div class="line"><span class="lineno">  285</span>    <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a> = _recHis_ptr;</div>
+<div class="line"><span class="lineno">  286</span>    <span class="keywordflow">if</span> (list_index &gt;= <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().size() || list_index &lt; 0)</div>
+<div class="line"><span class="lineno">  287</span>        <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> = <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().end();</div>
+<div class="line"><span class="lineno">  288</span>    <span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  289</span>    {</div>
-<div class="line"><span class="lineno">  290</span>        <span class="keywordflow">if</span> (timestamp_index != 0)</div>
-<div class="line"><span class="lineno">  291</span>        {</div>
-<div class="line"><span class="lineno">  292</span>            <a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> = <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().back().Get_container().end();</div>
-<div class="line"><span class="lineno">  293</span>        }</div>
-<div class="line"><span class="lineno">  294</span>    }</div>
-<div class="line"><span class="lineno">  295</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (timestamp_index &gt;= <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>-&gt;Get_container().size() || timestamp_index &lt; 0)</div>
-<div class="line"><span class="lineno">  296</span>    {</div>
-<div class="line"><span class="lineno">  297</span>        <a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> = <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>-&gt;Get_container().end();</div>
-<div class="line"><span class="lineno">  298</span>    }</div>
-<div class="line"><span class="lineno">  299</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  300</span>    {</div>
-<div class="line"><span class="lineno">  301</span>        <a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> = <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>-&gt;Get_container().begin() + timestamp_index;</div>
-<div class="line"><span class="lineno">  302</span>    }</div>
-<div class="line"><span class="lineno">  303</span>}</div>
+<div class="line"><span class="lineno">  290</span>        <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> = <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().begin();</div>
+<div class="line"><span class="lineno">  291</span>        <span class="keywordflow">while</span> (list_index &gt; 0)</div>
+<div class="line"><span class="lineno">  292</span>        {</div>
+<div class="line"><span class="lineno">  293</span>            <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>++;</div>
+<div class="line"><span class="lineno">  294</span>            list_index--;</div>
+<div class="line"><span class="lineno">  295</span>        }</div>
+<div class="line"><span class="lineno">  296</span>    }</div>
+<div class="line"><span class="lineno">  297</span> </div>
+<div class="line"><span class="lineno">  298</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> == <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().end())</div>
+<div class="line"><span class="lineno">  299</span>    {</div>
+<div class="line"><span class="lineno">  300</span>        <span class="keywordflow">if</span> (timestamp_index != 0)</div>
+<div class="line"><span class="lineno">  301</span>        {</div>
+<div class="line"><span class="lineno">  302</span>            <a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> = <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().back().Get_container().end();</div>
+<div class="line"><span class="lineno">  303</span>        }</div>
+<div class="line"><span class="lineno">  304</span>    }</div>
+<div class="line"><span class="lineno">  305</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (timestamp_index &gt;= <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>-&gt;Get_container().size() || timestamp_index &lt; 0)</div>
+<div class="line"><span class="lineno">  306</span>    {</div>
+<div class="line"><span class="lineno">  307</span>        <a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> = <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>-&gt;Get_container().end();</div>
+<div class="line"><span class="lineno">  308</span>    }</div>
+<div class="line"><span class="lineno">  309</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  310</span>    {</div>
+<div class="line"><span class="lineno">  311</span>        <a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> = <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>-&gt;Get_container().begin() + timestamp_index;</div>
+<div class="line"><span class="lineno">  312</span>    }</div>
+<div class="line"><span class="lineno">  313</span>}</div>
 <div class="ttc" id="aclass_recording_history_1_1iterator_html_a4a0dd0879f626e0bfc2b0ed380c74311"><div class="ttname"><a href="#a4a0dd0879f626e0bfc2b0ed380c74311">RecordingHistory::iterator::_vec_it</a></div><div class="ttdeci">vec_iter _vec_it</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8h_source.html#l00326">RecordingContainers.h:326</a></div></div>
 <div class="ttc" id="aclass_recording_history_1_1iterator_html_a9c3ffda1d238f688aa8a15665927769b"><div class="ttname"><a href="#a9c3ffda1d238f688aa8a15665927769b">RecordingHistory::iterator::_list_it</a></div><div class="ttdeci">list_iter _list_it</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8h_source.html#l00325">RecordingContainers.h:325</a></div></div>
 <div class="ttc" id="aclass_recording_history_1_1iterator_html_abee7b54cb6e0efd63f674a29205b5405"><div class="ttname"><a href="#abee7b54cb6e0efd63f674a29205b5405">RecordingHistory::iterator::_data_ptr</a></div><div class="ttdeci">const RecordingHistory * _data_ptr</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8h_source.html#l00324">RecordingContainers.h:324</a></div></div>
@@ -286,10 +286,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00370">370</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  371</span>{</div>
-<div class="line"><span class="lineno">  372</span>    <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == iter);</div>
-<div class="line"><span class="lineno">  373</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00380">380</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  381</span>{</div>
+<div class="line"><span class="lineno">  382</span>    <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == iter);</div>
+<div class="line"><span class="lineno">  383</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -316,10 +316,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00310">310</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  311</span>{</div>
-<div class="line"><span class="lineno">  312</span>    <span class="keywordflow">return</span> *<a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a>;</div>
-<div class="line"><span class="lineno">  313</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00320">320</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  321</span>{</div>
+<div class="line"><span class="lineno">  322</span>    <span class="keywordflow">return</span> *<a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a>;</div>
+<div class="line"><span class="lineno">  323</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -338,23 +338,23 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00321">321</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  322</span>{</div>
-<div class="line"><span class="lineno">  323</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> != <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().end())</div>
-<div class="line"><span class="lineno">  324</span>    {</div>
-<div class="line"><span class="lineno">  325</span>        ++<a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a>;</div>
-<div class="line"><span class="lineno">  326</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> == <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>-&gt;Get_container().end())</div>
-<div class="line"><span class="lineno">  327</span>        {</div>
-<div class="line"><span class="lineno">  328</span>            ++<a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>;</div>
-<div class="line"><span class="lineno">  329</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> != <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().end())</div>
-<div class="line"><span class="lineno">  330</span>            {</div>
-<div class="line"><span class="lineno">  331</span>                <a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> = <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>-&gt;Get_container().begin();</div>
-<div class="line"><span class="lineno">  332</span>            }</div>
-<div class="line"><span class="lineno">  333</span>        }</div>
-<div class="line"><span class="lineno">  334</span>    }</div>
-<div class="line"><span class="lineno">  335</span> </div>
-<div class="line"><span class="lineno">  336</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  337</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00331">331</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  332</span>{</div>
+<div class="line"><span class="lineno">  333</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> != <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().end())</div>
+<div class="line"><span class="lineno">  334</span>    {</div>
+<div class="line"><span class="lineno">  335</span>        ++<a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a>;</div>
+<div class="line"><span class="lineno">  336</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> == <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>-&gt;Get_container().end())</div>
+<div class="line"><span class="lineno">  337</span>        {</div>
+<div class="line"><span class="lineno">  338</span>            ++<a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>;</div>
+<div class="line"><span class="lineno">  339</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> != <a class="code hl_variable" href="#abee7b54cb6e0efd63f674a29205b5405">_data_ptr</a>-&gt;Get_container().end())</div>
+<div class="line"><span class="lineno">  340</span>            {</div>
+<div class="line"><span class="lineno">  341</span>                <a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> = <a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a>-&gt;Get_container().begin();</div>
+<div class="line"><span class="lineno">  342</span>            }</div>
+<div class="line"><span class="lineno">  343</span>        }</div>
+<div class="line"><span class="lineno">  344</span>    }</div>
+<div class="line"><span class="lineno">  345</span> </div>
+<div class="line"><span class="lineno">  346</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  347</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -373,13 +373,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00345">345</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  346</span>{</div>
-<div class="line"><span class="lineno">  347</span>    <a class="code hl_function" href="#afab1db115001511b88663a6412bb962f">iterator</a> tmp = *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  348</span>    ++*<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">  349</span>    <span class="keywordflow">return</span> tmp;</div>
-<div class="line"><span class="lineno">  350</span>}</div>
-<div class="ttc" id="aclass_recording_history_1_1iterator_html_afab1db115001511b88663a6412bb962f"><div class="ttname"><a href="#afab1db115001511b88663a6412bb962f">RecordingHistory::iterator::iterator</a></div><div class="ttdeci">iterator(const RecordingHistory *_recHis_ptr, int list_index, int timestamp_index)</div><div class="ttdoc">RecordingHistory::iterator::iterator.</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8cpp_source.html#l00272">RecordingContainers.cpp:272</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00355">355</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  356</span>{</div>
+<div class="line"><span class="lineno">  357</span>    <a class="code hl_function" href="#afab1db115001511b88663a6412bb962f">iterator</a> tmp = *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  358</span>    ++*<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  359</span>    <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><span class="lineno">  360</span>}</div>
+<div class="ttc" id="aclass_recording_history_1_1iterator_html_afab1db115001511b88663a6412bb962f"><div class="ttname"><a href="#afab1db115001511b88663a6412bb962f">RecordingHistory::iterator::iterator</a></div><div class="ttdeci">iterator(const RecordingHistory *_recHis_ptr, int list_index, int timestamp_index)</div><div class="ttdoc">RecordingHistory::iterator::iterator.</div><div class="ttdef"><b>Definition</b> <a href="_recording_containers_8cpp_source.html#l00282">RecordingContainers.cpp:282</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -431,13 +431,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00357">357</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  358</span>{</div>
-<div class="line"><span class="lineno">  359</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> == iter._list_it &amp;&amp; <a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> == iter._vec_it)</div>
-<div class="line"><span class="lineno">  360</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  361</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  362</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  363</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_recording_containers_8cpp_source.html#l00367">367</a> of file <a class="el" href="_recording_containers_8cpp_source.html">RecordingContainers.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  368</span>{</div>
+<div class="line"><span class="lineno">  369</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9c3ffda1d238f688aa8a15665927769b">_list_it</a> == iter._list_it &amp;&amp; <a class="code hl_variable" href="#a4a0dd0879f626e0bfc2b0ed380c74311">_vec_it</a> == iter._vec_it)</div>
+<div class="line"><span class="lineno">  370</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  371</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  372</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  373</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
