@@ -7,6 +7,20 @@
 #include "RecordingContainers.h"
 
 /**
+ * @enum ReaderState
+ * @note defines in which state Reader is
+ */
+enum class ReaderState
+{
+    CREATED,
+    WAITING,
+    READING,
+    STOPPED,
+    DESTROYED
+};
+
+
+/**
  * @class IReader
  * This class provides common interface for all implementations
  * that give access to data
@@ -20,6 +34,12 @@ public:
      * @return RecordingHistory with all timestamps collected
      */
     [[nodiscard]] virtual  const RecordingHistory& Get_data() const = 0;
+    
+    /**
+     * @brief Get_state
+     * @return state of the reader
+     */
+    [[nodiscard]] virtual ReaderState Get_state() const = 0;
 
     /**
      * @brief Set_file
@@ -27,6 +47,12 @@ public:
      * @return true if file successfully open
      */
     [[nodiscard]] virtual bool Set_file(const std::string_view & fname) = 0;
+
+    /**
+     * @brief Set_history_time_limit
+     * @param limit_in_sec limit of seconds of input history stored
+     */
+    virtual void Set_history_time_limit(int limit_in_sec) = 0;
 
     /**
      * @brief Start
