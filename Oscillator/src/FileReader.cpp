@@ -11,6 +11,7 @@ FileReader::FileReader(const std::string_view & fname, double start_time)
     _destroy_flag = false;
     _running = false;
     _stop_flag = false;
+    _state = ReaderState::CREATED;
 }
 
 /**
@@ -28,6 +29,15 @@ FileReader::FileReader(const std::string_view & fname, double start_time)
 }
 
 /**
+ * @brief Get_state
+ * @return state of the reader
+ */
+[[nodiscard]] ReaderState FileReader::Get_state() const
+{
+    return _state;
+}
+
+/**
  * @brief Set_file
  * @param fname name of file to open
  * @return true if file successfully open
@@ -36,6 +46,15 @@ FileReader::FileReader(const std::string_view & fname, double start_time)
 {
     _fname = fname;
     return true;
+}
+
+/**
+ * @brief Set_history_time_limit
+ * @param limit_in_sec limit of seconds of input history stored
+ */
+void FileReader::Set_history_time_limit(int limit_in_sec)
+{
+    _data.Set_history_time_limit(limit_in_sec);
 }
 
 /**
@@ -56,13 +75,16 @@ void FileReader::running_loop(void)
             {
                 if (_stop_flag)
                 {
+                    _state = ReaderState::WAITING;
                     std::this_thread::sleep_for(sleep_time_stopped);
                 }
                 else
                 {
+                    
                     _file.open(_fname);
                     if (_file.is_open())
                     {
+                        _state = ReaderState::READING;
                         //if file exist read data
                         RecordingVector vec;
                         double max_voltage = 0.0;
@@ -104,10 +126,12 @@ void FileReader::running_loop(void)
                         {
                             continue;
                         }
+                        _state = ReaderState::WAITING;
                         std::this_thread::sleep_for(sleep_time_running);
                     }
                     else
                     {
+                        _state = ReaderState::WAITING;
                         std::this_thread::sleep_for(sleep_time_stopped);
                     }
                 }
@@ -137,6 +161,7 @@ void FileReader::Stop()
     _stop_flag = true;
     _start_time = 0;
     _data.Clear();
+    _state = ReaderState::STOPPED;
 }
 
 /**
@@ -146,6 +171,7 @@ void FileReader::Stop()
 void FileReader::Resume()
 {
     _stop_flag = false;
+    _state = ReaderState::WAITING;
 }
 
 /**
@@ -157,6 +183,7 @@ void FileReader::Destroy()
     _destroy_flag = true;
     if (_thread.joinable())
         _thread.join();
+    _state = ReaderState::DESTROYED;
 }
 
 FileReader::~FileReader()

@@ -22,11 +22,23 @@ public:
     [[nodiscard]] const RecordingHistory& Get_data() const override;
 
     /**
+     * @brief Get_state
+     * @return state of the reader
+     */
+    [[nodiscard]] ReaderState Get_state() const override;
+
+    /**
      * @brief Set_file
      * @param fname name of file to open
      * @return true if file successfully open
      */
     [[nodiscard]] bool Set_file(const std::string_view & fname) override;
+
+    /**
+     * @brief Set_history_time_limit
+     * @param limit_in_sec limit of seconds of input history stored
+     */
+    void Set_history_time_limit(int limit_in_sec) override;
 
     /**
      * @brief Start
@@ -59,6 +71,7 @@ private:
     std::string _fname;
     RecordingHistory _data;
     std::thread _thread;
+    ReaderState _state;
 
     //states
     std::atomic_bool _destroyed;
