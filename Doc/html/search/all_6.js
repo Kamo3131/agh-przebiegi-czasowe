@@ -11,6 +11,7 @@ var searchData=
   ['get_5fmin_5fvoltage_8',['Get_min_voltage',['../struct_range_params.html#a2d564481dc35fc1c78839ab2fd924aa5',1,'RangeParams']]],
   ['get_5fnewest_5frecordingvector_9',['Get_newest_recordingVector',['../class_recording_history.html#ad8ba62551a76368723c882f04fc8f4a4',1,'RecordingHistory']]],
   ['get_5frecording_5fparams_10',['Get_recording_params',['../class_recording_vector.html#a7cf6dc0f2e49cfa07322914280edde3b',1,'RecordingVector::Get_recording_params()'],['../class_recording_history.html#a146bf3e5237e528ff9654d00dfa1c6be',1,'RecordingHistory::Get_recording_params()']]],
-  ['get_5ftime_11',['Get_time',['../struct_timestamp.html#a4808cd48399592c90e4fb413fa910e3b',1,'Timestamp']]],
-  ['get_5fvoltage_12',['Get_voltage',['../struct_timestamp.html#a6ae593c9aa693d96bcacc26c3b36048d',1,'Timestamp']]]
+  ['get_5fstate_11',['Get_state',['../class_file_reader.html#a4ffd95bb149d1291cff0f81b558e1070',1,'FileReader::Get_state()'],['../class_i_reader.html#a81bc1034a8cdf3a5b95d11499507ebdb',1,'IReader::Get_state()']]],
+  ['get_5ftime_12',['Get_time',['../struct_timestamp.html#a4808cd48399592c90e4fb413fa910e3b',1,'Timestamp']]],
+  ['get_5fvoltage_13',['Get_voltage',['../struct_timestamp.html#a6ae593c9aa693d96bcacc26c3b36048d',1,'Timestamp']]]
 ];
