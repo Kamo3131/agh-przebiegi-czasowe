@@ -139,23 +139,33 @@ Timestamp RecordingHistory::operator[](unsigned int i) const
 /**
  * @brief Get_newest_recordingVector
  * @return newest RecordingVector containing new data read
+ * If _data is empty it returns empty RecordingVector
  */
 RecordingVector RecordingHistory::Get_newest_recordingVector() const
 {
-    return _data.back();
+    if (_data.empty())
+        return RecordingVector();
+    else
+        return _data.back();
 }
 
 /**
  * @brief Get_before_newest_recordingVector
- * @return one before newest RecordingVector containing new data read
+ * @return one before newest RecordingVector containing new data read.
+ * If _data only has 1 RecordingVector it returns empty RecordingVector
  */
 RecordingVector RecordingHistory::Get_before_newest_recordingVector() const
 {
-    type::const_iterator iter = _data.end();
-    iter--;
-    iter--;
+    if (_data.size() >= 2)
+    {
+        type::const_iterator iter = _data.end();
+        iter--;
+        iter--;
 
-    return *iter;
+        return *iter;
+    }
+    else
+        return RecordingVector();
 }
 
 /**
