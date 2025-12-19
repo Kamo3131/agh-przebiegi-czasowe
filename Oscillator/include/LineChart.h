@@ -46,7 +46,7 @@ void Draw_line(sf::RenderTarget& target, sf::Vector2f begin, sf::Vector2f end, s
  * @param target is an object for drawing. Probably window.
  * @param color_of_lines color of the chart.
  */
-void Draw_multiply_lines(sf::RenderTarget& target, sf::Color color_of_lines) const;
+void Draw_multiple_lines(sf::RenderTarget& target, sf::Color color_of_lines) const;
 /**
  * @brief draws X and Y axises, where X is a moment in time, and y value at that time.
  * @param target is an object for drawing. Probably window.
@@ -57,28 +57,45 @@ void Draw_cartesian(sf::RenderTarget& target, float padding) const override;
  * @brief sets given data as the current data. Updates m_line_strip variable with new data.
  */
 void Set_data(std::vector<Timestamp> data) override;
+bool Is_cursor_on_chart(sf::RenderTarget& target) const override;
+[[nodiscard]] sf::Vector2i Get_cursor() const override;
 [[nodiscard]] float Get_width() const override;
 [[nodiscard]] float Get_height() const override;
 [[nodiscard]] float Get_scale_X() const override;
 [[nodiscard]] float Get_scale_Y() const override;
 [[nodiscard]] float Get_zoom() const override;
+[[nodiscard]] float Get_scrolling() const override;
+[[nodiscard]] float Get_panning() const override;
+void Set_cursor(sf::Vector2i postion) override;
 void Set_width(float new_width) override;
 void Set_height(float new_height) override;
 void Set_scale_X(float new_X) override;
 void Set_scale_Y(float new_Y) override;
 void Set_zoom(float new_zoom) override;
-void Set_origin(sf::Vector2f new_origin) override; 
+// void Set_zoom_and_pan_to_cursor(float new_zoom) override;
+void Set_origin(sf::Vector2f new_origin) override;
+void Set_scrolling(bool should_scroll) override;
+void Set_panning(bool should_pan) override;
+void Set_color(sf::Color new_color) override;
 private:
 std::vector<Timestamp> m_data;
 float m_width;
 float m_height;
 sf::Vector2f m_origin;
+float m_padding;
+sf::Vector2i m_cursor_position;
 float m_scale_X;
 float m_scale_Y;
 float m_data_min_X;
 float m_data_max_X;
 float m_data_min_Y;
 float m_data_max_Y;
+
+
+float m_view_min_time;
+float m_view_max_time;
+int m_start;
+int m_end;
 /**
  * zoom controls how many data points fit in the fixed drawing area
  * if zoom = 1.0: m_data_points visible
@@ -86,8 +103,9 @@ float m_data_max_Y;
  * if zoom = 0.5: m_data_points*2 visible (zoomed out)
  * min zoom = 1/3, and max zoom = 6.0
  */
-float m_zoom = 1.0f;
+float m_zoom;
+float m_zoom_anchor_time;
 const int MAX_DATA_POINTS = 900;
 int m_data_points;
-bool m_is_scrolling = false;
+
 };

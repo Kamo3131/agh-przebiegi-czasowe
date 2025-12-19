@@ -35,17 +35,31 @@ virtual void Add_data(const std::vector<Timestamp>& new_timestamps) = 0;
  * @brief updates geometry based on the new data that was provided
  */
 virtual void Update_geometry() = 0;
+
+virtual bool Is_cursor_on_chart(sf::RenderTarget& target) const = 0;
+[[nodiscard]] virtual sf::Vector2i Get_cursor() const = 0;
 [[nodiscard]] virtual float Get_width() const = 0;
 [[nodiscard]] virtual float Get_height() const = 0;
 [[nodiscard]] virtual float Get_scale_X() const = 0;
 [[nodiscard]] virtual float Get_scale_Y() const = 0;
 [[nodiscard]] virtual float Get_zoom() const = 0;
+[[nodiscard]] virtual float Get_scrolling() const = 0;
+[[nodiscard]] virtual float Get_panning() const = 0;
+virtual void Set_cursor(sf::Vector2i postion) = 0;
 virtual void Set_width(float new_width) = 0;
 virtual void Set_height(float new_height) = 0;
 virtual void Set_scale_X(float new_X) = 0;
 virtual void Set_scale_Y(float new_Y) = 0;
 virtual void Set_zoom(float new_zoom) = 0; 
-virtual void Set_origin(sf::Vector2f new_origin) = 0; 
+// virtual void Set_zoom_and_pan_to_cursor(float new_zoom) = 0;
+virtual void Set_origin(sf::Vector2f new_origin) = 0;
+virtual void Set_scrolling(bool should_scroll) = 0;
+virtual void Set_panning(bool should_pan) = 0;  
+virtual void Set_color(sf::Color new_color) = 0;
 virtual ~IChart() {}
 
+protected:
+bool m_should_scroll = false;
+bool m_should_pan = false;
+sf::Color m_color_of_chart;
 };
