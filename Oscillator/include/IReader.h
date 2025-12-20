@@ -42,6 +42,12 @@ public:
     [[nodiscard]] virtual ReaderState Get_state() const = 0;
 
     /**
+     * @brief Check_if_new_data_loaded
+     * @return true if new data after last call to this function was loaded
+     */
+    [[nodiscard]] virtual bool Check_if_new_data_loaded() = 0;
+
+    /**
      * @brief Set_file
      * @param fname name of file to open
      * @return true if file successfully open

@@ -12,6 +12,7 @@ FileReader::FileReader(const std::string_view & fname, double start_time)
     _running = false;
     _stop_flag = false;
     _state = ReaderState::CREATED;
+    _new_data_loaded = false;
 }
 
 /**
@@ -35,6 +36,17 @@ FileReader::FileReader(const std::string_view & fname, double start_time)
 [[nodiscard]] ReaderState FileReader::Get_state() const
 {
     return _state;
+}
+
+/**
+ * @brief Check_if_new_data_loaded
+ * @return true if new data after last call to this function was loaded
+ */
+[[nodiscard]] bool FileReader::Check_if_new_data_loaded()
+{
+    bool state_val = _new_data_loaded;
+    _new_data_loaded = false;
+    return state_val;
 }
 
 /**
@@ -75,7 +87,6 @@ void FileReader::running_loop(void)
             {
                 if (_stop_flag)
                 {
-                    _state = ReaderState::WAITING;
                     std::this_thread::sleep_for(sleep_time_stopped);
                 }
                 else
@@ -121,6 +132,7 @@ void FileReader::running_loop(void)
                             vec.Set_recording_params(params);
                             _data.Push_recordingVector(std::move(vec));
                             _start_time = max_time;
+                            _new_data_loaded = true;
                         }
                         else
                         {

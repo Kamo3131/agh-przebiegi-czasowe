@@ -28,6 +28,12 @@ public:
     [[nodiscard]] ReaderState Get_state() const override;
 
     /**
+     * @brief Check_if_new_data_loaded
+     * @return true if new data after last call to this function was loaded
+     */
+    [[nodiscard]] bool Check_if_new_data_loaded() override;
+
+    /**
      * @brief Set_file
      * @param fname name of file to open
      * @return true if file successfully open
@@ -72,6 +78,7 @@ private:
     RecordingHistory _data;
     std::thread _thread;
     ReaderState _state;
+    bool _new_data_loaded;
 
     //states
     std::atomic_bool _destroyed;
