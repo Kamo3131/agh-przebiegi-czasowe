@@ -1,6 +1,7 @@
 var class_i_reader =
 [
     [ "~IReader", "class_i_reader.html#a3489c23855da532dd3a10cfae78bc899", null ],
+    [ "Check_if_new_data_loaded", "class_i_reader.html#a6907c4ecf8dead829b083b4435177a83", null ],
     [ "Destroy", "class_i_reader.html#ac4df56a5cedaf7db64daed9ff92a0ab6", null ],
     [ "Get_data", "class_i_reader.html#a95882e225a14119d93aadffd330813d1", null ],
     [ "Get_state", "class_i_reader.html#a81bc1034a8cdf3a5b95d11499507ebdb", null ],
