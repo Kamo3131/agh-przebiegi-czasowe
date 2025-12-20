@@ -109,6 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a95882e225a14119d93aadffd330813d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get_data.  <br /></td></tr>
 <tr class="memitem:a81bc1034a8cdf3a5b95d11499507ebdb" id="r_a81bc1034a8cdf3a5b95d11499507ebdb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370f">ReaderState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81bc1034a8cdf3a5b95d11499507ebdb">Get_state</a> () const =0</td></tr>
 <tr class="memdesc:a81bc1034a8cdf3a5b95d11499507ebdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get_state.  <br /></td></tr>
+<tr class="memitem:a6907c4ecf8dead829b083b4435177a83" id="r_a6907c4ecf8dead829b083b4435177a83"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6907c4ecf8dead829b083b4435177a83">Check_if_new_data_loaded</a> ()=0</td></tr>
+<tr class="memdesc:a6907c4ecf8dead829b083b4435177a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check_if_new_data_loaded.  <br /></td></tr>
 <tr class="memitem:aa124feddfe068cba8ddaff54e71ab556" id="r_aa124feddfe068cba8ddaff54e71ab556"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa124feddfe068cba8ddaff54e71ab556">Set_file</a> (const std::string_view &amp;fname)=0</td></tr>
 <tr class="memdesc:aa124feddfe068cba8ddaff54e71ab556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set_file.  <br /></td></tr>
 <tr class="memitem:ac851d8ebeb6579bca01e853eb18e1e6b" id="r_ac851d8ebeb6579bca01e853eb18e1e6b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac851d8ebeb6579bca01e853eb18e1e6b">Set_history_time_limit</a> (int limit_in_sec)=0</td></tr>
@@ -151,12 +153,42 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_i_reader_8h_source.html#l00081">81</a> of file <a class="el" href="_i_reader_8h_source.html">IReader.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="_i_reader_8h_source.html#l00087">87</a> of file <a class="el" href="_i_reader_8h_source.html">IReader.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a6907c4ecf8dead829b083b4435177a83" name="a6907c4ecf8dead829b083b4435177a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6907c4ecf8dead829b083b4435177a83">&#9670;&#160;</a></span>Check_if_new_data_loaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IReader::Check_if_new_data_loaded </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check_if_new_data_loaded. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if new data after last call to this function was loaded </dd></dl>
+
+<p>Implemented in <a class="el" href="class_file_reader.html#a4cbbd5cc04696298fa9dcd9830981335">FileReader</a>.</p>
+
+</div>
+</div>
 <a id="ac4df56a5cedaf7db64daed9ff92a0ab6" name="ac4df56a5cedaf7db64daed9ff92a0ab6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4df56a5cedaf7db64daed9ff92a0ab6">&#9670;&#160;</a></span>Destroy()</h2>
 
