@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pop_5frecordingvector_0',['Pop_recordingVector',['../class_recording_history.html#a3172b92029af6a2d6bf233fb01cd41a3',1,'RecordingHistory']]],
-  ['push_5frecordingvector_1',['Push_recordingVector',['../class_recording_history.html#a5f79a0d2bab7175af88d80b3068f5f5f',1,'RecordingHistory']]]
+  ['linechart_0',['LineChart',['../class_line_chart.html#ab9fc223417d24b20a1c408dc0797b823',1,'LineChart']]]
 ];

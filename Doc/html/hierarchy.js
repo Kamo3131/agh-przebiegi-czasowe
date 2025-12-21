@@ -2,6 +2,9 @@ var hierarchy =
 [
     [ "Dummy::FuncIterator", "class_dummy_1_1_func_iterator.html", null ],
     [ "Dummy::Generator", "class_dummy_1_1_generator.html", null ],
+    [ "IChart", "class_i_chart.html", [
+      [ "LineChart", "class_line_chart.html", null ]
+    ] ],
     [ "IReader", "class_i_reader.html", [
       [ "FileReader", "class_file_reader.html", null ]
     ] ],

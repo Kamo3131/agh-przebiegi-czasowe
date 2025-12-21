@@ -58,7 +58,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_dummy_generator_8cpp.html"
+"_dummy_generator_8cpp.html",
+"files.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
