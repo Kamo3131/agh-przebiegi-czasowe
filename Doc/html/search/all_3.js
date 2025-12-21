@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['destroy_0',['Destroy',['../class_dummy_1_1_generator.html#a139197828a3586ae8139dd562562d677',1,'Dummy::Generator::Destroy()'],['../class_file_reader.html#ae77bb7af6de3a60e02074b124ef95e95',1,'FileReader::Destroy()'],['../class_i_reader.html#ac4df56a5cedaf7db64daed9ff92a0ab6',1,'IReader::Destroy()']]],
-  ['destroyed_1',['DESTROYED',['../_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa5d7e41d3ac0abca5974598807df874ea',1,'IReader.h']]],
-  ['dummy_2',['Dummy',['../namespace_dummy.html',1,'']]],
-  ['dummygenerator_2ecpp_3',['DummyGenerator.cpp',['../_dummy_generator_8cpp.html',1,'']]],
-  ['dummygenerator_2eh_4',['DummyGenerator.h',['../_dummy_generator_8h.html',1,'']]]
+  ['check_5fif_5fnew_5fdata_5floaded_0',['Check_if_new_data_loaded',['../class_file_reader.html#a4cbbd5cc04696298fa9dcd9830981335',1,'FileReader::Check_if_new_data_loaded()'],['../class_i_reader.html#a6907c4ecf8dead829b083b4435177a83',1,'IReader::Check_if_new_data_loaded()']]],
+  ['clear_1',['Clear',['../class_recording_vector.html#acb7e09fda9bd472415b1c1f75a61cc42',1,'RecordingVector::Clear()'],['../class_recording_history.html#a76b5f354445a37b7e0bc42a977422e32',1,'RecordingHistory::Clear()']]],
+  ['create_5ffunc_2',['Create_Func',['../namespace_dummy.html#acf86e7ee3184771b7ea3a373aa590f8e',1,'Dummy']]],
+  ['created_3',['CREATED',['../_i_reader_8h.html#a6a8affdb680297d42f6edbc167c9370fa98690bf632c29c17c9e4c5a64069903c',1,'IReader.h']]]
 ];

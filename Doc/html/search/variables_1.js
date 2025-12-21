@@ -1,4 +1,22 @@
 var searchData=
 [
-  ['pi_0',['pi',['../_func_iterator_8cpp.html#a43016d873124d39034edb8cd164794db',1,'FuncIterator.cpp']]]
+  ['m_5fcolor_5fof_5fchart_0',['m_color_of_chart',['../class_i_chart.html#a81a8b5d1ae62e8f70cc3ab366388be76',1,'IChart']]],
+  ['m_5fcursor_5fposition_1',['m_cursor_position',['../class_i_chart.html#a35abb957463132d6a1ff2fd80ac9f4e8',1,'IChart']]],
+  ['m_5fdata_2',['m_data',['../class_i_chart.html#aa4870e8f8faf92bf65cb9668a89b925b',1,'IChart']]],
+  ['m_5fdata_5fmax_5fy_3',['m_data_max_Y',['../class_line_chart.html#a0b2e5c0d8968078b2e6397221deac2ed',1,'LineChart']]],
+  ['m_5fdata_5fmin_5fy_4',['m_data_min_Y',['../class_line_chart.html#a862d3b0a7fca22fc0ee10274dd454283',1,'LineChart']]],
+  ['m_5fend_5',['m_end',['../class_line_chart.html#a802208765712a7ad98ce672dff249841',1,'LineChart']]],
+  ['m_5fheight_6',['m_height',['../class_i_chart.html#a8b1eb3ee9c8aea376d756b073234314a',1,'IChart']]],
+  ['m_5forigin_7',['m_origin',['../class_i_chart.html#a3093e117678f11369660751cd41baa5d',1,'IChart']]],
+  ['m_5fpadding_8',['m_padding',['../class_i_chart.html#abb256558ea432d5be53383a6f54770fc',1,'IChart']]],
+  ['m_5fscale_5fx_9',['m_scale_X',['../class_line_chart.html#a31b2ab6162495ad1373cfd34b44728e6',1,'LineChart']]],
+  ['m_5fscale_5fy_10',['m_scale_Y',['../class_line_chart.html#a3c4e57033f064c9efce22903790b34cb',1,'LineChart']]],
+  ['m_5fshould_5fpan_11',['m_should_pan',['../class_i_chart.html#a9d450b2f11e66f4145f20114e94d828d',1,'IChart']]],
+  ['m_5fshould_5fscroll_12',['m_should_scroll',['../class_i_chart.html#aa091cdf87fb77b395b348039a9c0038b',1,'IChart']]],
+  ['m_5fstart_13',['m_start',['../class_line_chart.html#aefb5d6b79d7d358d3b9f609b7bd78697',1,'LineChart']]],
+  ['m_5ftime_5fspan_14',['m_time_span',['../class_line_chart.html#a837a8d4fe6347d2c4218cfb54afb454f',1,'LineChart']]],
+  ['m_5fview_5fmax_5ftime_15',['m_view_max_time',['../class_line_chart.html#af65b53b95cb7df41140126dcd966cb79',1,'LineChart']]],
+  ['m_5fview_5fmin_5ftime_16',['m_view_min_time',['../class_line_chart.html#ac931a47cef409f899544e3972f5f22d2',1,'LineChart']]],
+  ['m_5fwidth_17',['m_width',['../class_i_chart.html#ab3d4851ac8da6ed6471ec64e84ef9308',1,'IChart']]],
+  ['m_5fzoom_18',['m_zoom',['../class_line_chart.html#a9ac8d6fbbbf82419964f605bba2987ed',1,'LineChart']]]
 ];

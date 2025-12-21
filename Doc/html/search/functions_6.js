@@ -1,4 +1,28 @@
 var searchData=
 [
-  ['iterator_0',['iterator',['../class_recording_history_1_1iterator.html#afab1db115001511b88663a6412bb962f',1,'RecordingHistory::iterator::iterator(const RecordingHistory *_recHis_ptr, int list_index, int timestamp_index)'],['../class_recording_history_1_1iterator.html#af32f8c89a1f494d40d30f2b6ebbd17ee',1,'RecordingHistory::iterator::iterator(const iterator &amp;)=default']]]
+  ['generator_0',['Generator',['../class_dummy_1_1_generator.html#a5ce5f79872fdcc1feb8b442d1122cb10',1,'Dummy::Generator']]],
+  ['get_5fbefore_5fnewest_5frecordingvector_1',['Get_before_newest_recordingVector',['../class_recording_history.html#a3202444426bd00673b6b9e121a518f3b',1,'RecordingHistory']]],
+  ['get_5fcontainer_2',['Get_container',['../class_recording_vector.html#a699681ea9edfb5d3b6275935866b892b',1,'RecordingVector::Get_container() const'],['../class_recording_vector.html#abf5fefd91c56fa513be531683a0c6634',1,'RecordingVector::Get_container()'],['../class_recording_history.html#a3484980cb0200d8ba9b303c24091d96e',1,'RecordingHistory::Get_container()']]],
+  ['get_5fcursor_3',['Get_cursor',['../class_i_chart.html#af37e325bb89d7b94b2edd7d16ed8291b',1,'IChart::Get_cursor()'],['../class_line_chart.html#a5e689a30df0367b9fe1f564b0260dfa4',1,'LineChart::Get_cursor()']]],
+  ['get_5fdata_4',['Get_data',['../class_file_reader.html#ae444ae143f6f2e9fbf637a1ce8e4de2e',1,'FileReader::Get_data()'],['../class_i_reader.html#a95882e225a14119d93aadffd330813d1',1,'IReader::Get_data()']]],
+  ['get_5fheight_5',['Get_height',['../class_i_chart.html#a3ae32017fbd7936a75c63705e90eb881',1,'IChart::Get_height()'],['../class_line_chart.html#ab2fad67d18b040b6ae4f5f5c69abdc68',1,'LineChart::Get_height()']]],
+  ['get_5fmax_5findex_6',['Get_max_index',['../struct_range_params.html#a1b623d8bdd9b547009599062066cb2c3',1,'RangeParams']]],
+  ['get_5fmax_5ftime_7',['Get_max_time',['../struct_range_params.html#ad140e4d5f1669090332a3f4c98d2cb5b',1,'RangeParams']]],
+  ['get_5fmax_5fvoltage_8',['Get_max_voltage',['../struct_range_params.html#ae60ce0f98d3ae5beae159177d348aa75',1,'RangeParams']]],
+  ['get_5fmax_5fx_9',['Get_max_X',['../class_line_chart.html#ae0e013ef48c2a90ba1faacbb9ab1d46f',1,'LineChart']]],
+  ['get_5fmin_5ftime_10',['Get_min_time',['../struct_range_params.html#a96a0849ee0ada8b650b31e5e39b92c2f',1,'RangeParams']]],
+  ['get_5fmin_5fvoltage_11',['Get_min_voltage',['../struct_range_params.html#a2d564481dc35fc1c78839ab2fd924aa5',1,'RangeParams']]],
+  ['get_5fmin_5fx_12',['Get_min_X',['../class_line_chart.html#a2c6b2df220ef8715e6fff90e8ba89a5b',1,'LineChart']]],
+  ['get_5fnewest_5frecordingvector_13',['Get_newest_recordingVector',['../class_recording_history.html#ad8ba62551a76368723c882f04fc8f4a4',1,'RecordingHistory']]],
+  ['get_5fpanning_14',['Get_panning',['../class_i_chart.html#a3ab359ed48956178d42cdce3e9789ca6',1,'IChart::Get_panning()'],['../class_line_chart.html#a60f42ef7948d454c0dc92be8f1b0d79d',1,'LineChart::Get_panning()']]],
+  ['get_5frecording_5fparams_15',['Get_recording_params',['../class_recording_vector.html#a7cf6dc0f2e49cfa07322914280edde3b',1,'RecordingVector::Get_recording_params()'],['../class_recording_history.html#a146bf3e5237e528ff9654d00dfa1c6be',1,'RecordingHistory::Get_recording_params()']]],
+  ['get_5fscale_5fx_16',['Get_scale_X',['../class_line_chart.html#ac6eb5c246b917fe23e5c3a76dced6618',1,'LineChart']]],
+  ['get_5fscale_5fy_17',['Get_scale_Y',['../class_line_chart.html#a3827234fc5a929b4f9a52f609c220a34',1,'LineChart']]],
+  ['get_5fscrolling_18',['Get_scrolling',['../class_i_chart.html#acb9a56e8eed278035a7d07e20eaf9e48',1,'IChart::Get_scrolling()'],['../class_line_chart.html#a6a090477038a835a02f4c5709854fe63',1,'LineChart::Get_scrolling()']]],
+  ['get_5fstate_19',['Get_state',['../class_file_reader.html#a4ffd95bb149d1291cff0f81b558e1070',1,'FileReader::Get_state()'],['../class_i_reader.html#a81bc1034a8cdf3a5b95d11499507ebdb',1,'IReader::Get_state()']]],
+  ['get_5ftime_20',['Get_time',['../struct_timestamp.html#a4808cd48399592c90e4fb413fa910e3b',1,'Timestamp']]],
+  ['get_5ftime_5fspan_21',['Get_time_span',['../class_i_chart.html#aacc02dd3545df0e02d9ed73dc76cf2d5',1,'IChart::Get_time_span()'],['../class_line_chart.html#a2f0a161c873688904b80b3cb714c7995',1,'LineChart::Get_time_span()']]],
+  ['get_5fvoltage_22',['Get_voltage',['../struct_timestamp.html#a6ae593c9aa693d96bcacc26c3b36048d',1,'Timestamp']]],
+  ['get_5fwidth_23',['Get_width',['../class_i_chart.html#a8ca18b14563cde559ada007efa87a87a',1,'IChart::Get_width()'],['../class_line_chart.html#ab3a2e4ea43794f4bf333b57062dcd1d7',1,'LineChart::Get_width()']]],
+  ['get_5fzoom_24',['Get_zoom',['../class_i_chart.html#ab9c35ca74a3d361859ac6f14b52f24a1',1,'IChart::Get_zoom()'],['../class_line_chart.html#a6178707f6eb8dec1c679d12fdb354b05',1,'LineChart::Get_zoom()']]]
 ];
