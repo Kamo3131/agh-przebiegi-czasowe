@@ -123,6 +123,7 @@ ModeType SettingsPanel::Get_display_mode() const
 {
      return display_mode; 
 }
+
 /**
  * @brief Get_chart_style
  * @return 2 kinds of chart style (LINE, BAR) in which oscilloscope can work
@@ -132,43 +133,46 @@ ChartStyle SettingsPanel::Get_chart_style() const
     return chart_style; 
 }
 
-    /**
-     * @brief Is_autoscale_enabled
-     * @return true if autoscale is enabled, false otherwise
-     */
+/**
+ * @brief Is_autoscale_enabled
+ * @return true if autoscale is enabled, false otherwise
+ */
 bool SettingsPanel::Is_autoscale_enabled() const 
 {
     return autoscale;
 }
-    /**
-     * @brief Is_show_grid_enabled
-     * @return true if grid is enabled, false otherwise
-     */
-bool SettingsPanel::Is_show_grid_enabled() const 
+
+/**
+ * @brief Is_show_grid_enabled
+ * @return true if grid is enabled, false otherwise
+ */
+ bool SettingsPanel::Is_show_grid_enabled() const 
 {
     return show_grid;
 }
-    /**
-     * @brief Get_time_div
-     * @return The time division in seconds per division [s/div]
-     */
+
+/**
+ * @brief Get_time_div
+ * @return The time division in seconds per division [s/div]
+ */
 float SettingsPanel::Get_time_div() const 
 {
     return time_div;
 }
     
-    /**
-     * @brief Get_volt_div
-     * @return The volt division in volts per division [V/div]
-     */
+/**
+ * @brief Get_volt_div
+ * @return The volt division in volts per division [V/div]
+ */
 float SettingsPanel::Get_volt_div() const 
 { 
     return volt_div;
 }
-    /**
-     * @brief Get_file_name
-     * @return File name from which the data will be loaded to oscilloscope
-     */
+
+/**
+ * @brief Get_file_name
+ * @return File name from which the data will be loaded to oscilloscope
+ */
 const std::string & SettingsPanel::Get_file_name() const 
 {
     return file_name;
